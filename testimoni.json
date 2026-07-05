@@ -1,0 +1,74 @@
+[
+    {
+        "id": "1",
+        "title": {
+            "id": "E-Commerce Mewah",
+            "en": "Luxury E-Commerce"
+        },
+        "category": {
+            "id": "Platform Web",
+            "en": "Web Platform"
+        },
+        "bgGradient": "from-slate-800/50 to-slate-900/50"
+    },
+    {
+        "id": "2",
+        "title": {
+            "id": "Sistem Manajemen Data",
+            "en": "Data Management System"
+        },
+        "category": {
+            "id": "Perangkat Lunak Enterprise",
+            "en": "Enterprise Software"
+        },
+        "bgGradient": "from-slate-700/50 to-slate-800/50"
+    },
+    {
+        "id": "3",
+        "title": {
+            "id": "Aplikasi Finansial",
+            "en": "Financial Application"
+        },
+        "category": {
+            "id": "Aplikasi Mobile & Web",
+            "en": "Mobile & Web App"
+        },
+        "bgGradient": "from-slate-800/50 to-slate-900/50"
+    },
+    {
+        "id": "4",
+        "title": {
+            "id": "Platform Edukasi",
+            "en": "Education Platform"
+        },
+        "category": {
+            "id": "Solusi EdTech",
+            "en": "EdTech Solution"
+        },
+        "bgGradient": "from-slate-900/50 to-slate-950/50"
+    },
+    {
+        "id": "5",
+        "title": {
+            "id": "Aplikasi Kesehatan",
+            "en": "Healthcare App"
+        },
+        "category": {
+            "id": "Aplikasi HealthTech",
+            "en": "HealthTech App"
+        },
+        "bgGradient": "from-slate-700/50 to-slate-900/50"
+    },
+    {
+        "id": "6",
+        "title": {
+            "id": "Portal Real Estate",
+            "en": "Real Estate Portal"
+        },
+        "category": {
+            "id": "Portal Web",
+            "en": "Web Portal"
+        },
+        "bgGradient": "from-slate-800/50 to-slate-950/50"
+    }
+]
