@@ -2,14 +2,14 @@
     {
         "id": "1",
         "title": {
-            "id": "E-Commerce Mewah",
-            "en": "Luxury E-Commerce"
+            "id": "Whatsapp Asisten Reternia",
+            "en": "Whatsapp Assistant Reternia"
         },
         "category": {
-            "id": "Platform Web",
-            "en": "Web Platform"
+            "id": "WhatsApp Automation",
+            "en": "WhatsApp Automation"
         },
-        "image": "",
+        "image": "portfolio-images/wa-reternia.png",
         "link": "#"
     },
     {
