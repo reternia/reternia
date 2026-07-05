@@ -9,7 +9,6 @@
             "id": "Platform Web",
             "en": "Web Platform"
         },
-        "bgGradient": "from-slate-800/50 to-slate-900/50",
         "image": "",
         "link": "#"
     },
@@ -23,7 +22,6 @@
             "id": "Perangkat Lunak Enterprise",
             "en": "Enterprise Software"
         },
-        "bgGradient": "from-slate-700/50 to-slate-800/50",
         "image": "",
         "link": "#"
     },
@@ -37,7 +35,6 @@
             "id": "Aplikasi Mobile & Web",
             "en": "Mobile & Web App"
         },
-        "bgGradient": "from-slate-800/50 to-slate-900/50",
         "image": "",
         "link": "#"
     },
@@ -51,7 +48,6 @@
             "id": "Solusi EdTech",
             "en": "EdTech Solution"
         },
-        "bgGradient": "from-slate-900/50 to-slate-950/50",
         "image": "",
         "link": "#"
     },
@@ -65,7 +61,6 @@
             "id": "Aplikasi HealthTech",
             "en": "HealthTech App"
         },
-        "bgGradient": "from-slate-700/50 to-slate-900/50",
         "image": "",
         "link": "#"
     },
@@ -79,7 +74,6 @@
             "id": "Portal Web",
             "en": "Web Portal"
         },
-        "bgGradient": "from-slate-800/50 to-slate-950/50",
         "image": "",
         "link": "#"
     }
