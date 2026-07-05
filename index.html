@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RETERNIA | Premium Software House</title>
+    <!-- Tailwind CSS -->
+    <script src="tailwind.js"></script>
+    <!-- Google Fonts -->
+    <link href="fonts.css" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                    },
+                    colors: {
+                        slate: {
+                            850: '#151e2e',
+                            900: '#0f172a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Base Vanta Layer */
+        #vanta-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -2;
+        }
+
+        /* Glassmorphic Blur Overlay Layer */
+        .glass-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.05);
+            backdrop-filter: blur(45px);
+            -webkit-backdrop-filter: blur(45px);
+            z-index: -1;
+        }
+
+        /* Smooth Transition for language switch */
+        .translatable {
+            transition: opacity 0.3s ease;
+        }
+        
+        .fade-out {
+            opacity: 0;
+        }
+
+        /* Hide scrollbar for horizontal scrolling */
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="text-white font-sans antialiased selection:bg-white selection:text-black overflow-x-hidden bg-black">
+
+    <!-- Layer 1: Vanta Background -->
+    <div id="vanta-bg"></div>
+
+    <!-- Layer 2: Glass Overlay -->
+    <div class="glass-overlay"></div>
+
+    <!-- Layer 3: Content -->
+    <div class="relative z-10 flex flex-col min-h-screen">
+        
+        <!-- Navbar -->
+        <nav class="w-full px-6 py-8 md:px-12 lg:px-24 flex justify-between items-center bg-transparent relative">
+            
+            <!-- Text Logo Left -->
+            <a href="#" class="font-serif text-2xl tracking-[0.2em] uppercase font-medium text-white hover:opacity-70 transition-opacity relative z-20">
+                Reternia
+            </a>
+            
+            <!-- SVG Logo Centered -->
+            <a href="#" class="absolute left-1/2 -translate-x-1/2 hover:opacity-70 transition-opacity z-10">
+                <img src="reternia.svg" alt="Reternia Logo" class="h-12 md:h-16 w-auto">
+            </a>
+
+            <!-- Language Switcher -->
+            <div class="flex items-center space-x-3 text-xs font-medium tracking-widest bg-black/40 backdrop-blur-md px-4 py-2 rounded-full border border-white/20 shadow-sm relative z-20">
+                <button onclick="setLang('id')" id="btn-id" class="transition-colors hover:text-white text-white">ID</button>
+                <span class="text-white/30">|</span>
+                <button onclick="setLang('en')" id="btn-en" class="transition-colors hover:text-white text-white/50">EN</button>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <main class="flex-grow flex flex-col justify-center min-h-screen px-6 py-24 md:px-12 lg:px-24 lg:py-32 max-w-7xl mx-auto w-full">
+            <div class="max-w-4xl">
+                <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl leading-[1.05] font-medium text-white mb-8 translatable" data-i18n="hero_headline">
+                    Mengubah Ide Kompleks Menjadi Produk Digital Berkualitas Tinggi.
+                </h1>
+                <p class="text-lg md:text-xl font-light text-white/80 max-w-2xl mb-12 leading-relaxed translatable" data-i18n="hero_subheadline">
+                    Rumah perangkat lunak premium yang mendedikasikan diri pada estetika, performa, dan inovasi tanpa batas.
+                </p>
+                <a href="https://wa.me/6285111401181" target="_blank" class="inline-flex items-center justify-center px-8 py-4 bg-white text-black text-sm tracking-[0.15em] uppercase font-medium hover:bg-slate-200 transition-all duration-300 rounded-full hover:shadow-2xl hover:shadow-white/20 group translatable">
+                    <span data-i18n="cta_discuss">Diskusikan Proyek</span>
+                    <svg class="w-4 h-4 ml-3 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </a>
+            </div>
+        </main>
+
+        <!-- Services Section -->
+        <section id="services" class="px-6 py-24 md:px-12 lg:px-24 bg-black/30 border-y border-white/10 backdrop-blur-md">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="font-serif text-3xl md:text-4xl text-white mb-16 translatable" data-i18n="services_title">Layanan</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16">
+                    <!-- Service 1 -->
+                    <div class="group cursor-pointer">
+                        <div class="w-12 h-12 mb-8 rounded-full border border-white/30 flex items-center justify-center text-white/50 group-hover:border-white group-hover:text-white transition-colors bg-black/50 backdrop-blur-md font-serif text-lg">
+                            01
+                        </div>
+                        <h3 class="text-xl font-medium text-white mb-4 translatable" data-i18n="service_1_title">Situs Web Perusahaan</h3>
+                        <p class="text-white/70 font-light leading-relaxed translatable" data-i18n="service_1_desc">
+                            Kehadiran digital yang elegan dan responsif, dirancang khusus untuk mencerminkan identitas premium merek Anda.
+                        </p>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="group cursor-pointer">
+                        <div class="w-12 h-12 mb-8 rounded-full border border-white/30 flex items-center justify-center text-white/50 group-hover:border-white group-hover:text-white transition-colors bg-black/50 backdrop-blur-md font-serif text-lg">
+                            02
+                        </div>
+                        <h3 class="text-xl font-medium text-white mb-4 translatable" data-i18n="service_2_title">Otomatisasi AI</h3>
+                        <p class="text-white/70 font-light leading-relaxed translatable" data-i18n="service_2_desc">
+                            Integrasi kecerdasan buatan mutakhir untuk menyederhanakan alur kerja dan meningkatkan efisiensi operasional.
+                        </p>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="group cursor-pointer">
+                        <div class="w-12 h-12 mb-8 rounded-full border border-white/30 flex items-center justify-center text-white/50 group-hover:border-white group-hover:text-white transition-colors bg-black/50 backdrop-blur-md font-serif text-lg">
+                            03
+                        </div>
+                        <h3 class="text-xl font-medium text-white mb-4 translatable" data-i18n="service_3_title">Solusi Enterprise Kustom</h3>
+                        <p class="text-white/70 font-light leading-relaxed translatable" data-i18n="service_3_desc">
+                            Pengembangan perangkat lunak skala bisnis yang dirancang khusus untuk mengoptimalkan operasi dan skalabilitas perusahaan Anda.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="px-6 py-32 md:px-12 lg:px-24">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+                    <div>
+                        <h2 class="font-serif text-3xl md:text-4xl text-white mb-4 translatable" data-i18n="portfolio_title">Testimoni</h2>
+                        <p class="text-white/70 font-light translatable" data-i18n="portfolio_subtitle">Bekerjasama dengan</p>
+                    </div>
+                </div>
+
+                <div id="portfolio-scroll" class="flex overflow-x-auto gap-8 pb-8 snap-x snap-mandatory hide-scrollbar">
+                    <!-- Port 1 -->
+                    <div class="flex-none w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.333rem)] snap-center group aspect-[4/5] bg-white/10 border border-white/20 backdrop-blur-md rounded-2xl overflow-hidden relative shadow-sm hover:shadow-2xl transition-all duration-500 cursor-pointer">
+                        <div class="absolute inset-0 bg-gradient-to-br from-slate-800/50 to-slate-900/50 mix-blend-multiply group-hover:scale-105 transition-transform duration-700 ease-out"></div>
+                        <div class="absolute inset-0 bg-white/5 group-hover:bg-white/0 transition-colors duration-500"></div>
+                        <div class="absolute bottom-0 left-0 w-full p-8 bg-gradient-to-t from-black/90 via-black/60 to-transparent">
+                            <h4 class="text-white text-xl font-medium translatable" data-i18n="port_1_title">E-Commerce Mewah</h4>
+                            <p class="text-white/80 text-sm font-light mt-2 tracking-wide uppercase">Web Platform</p>
+                        </div>
+                    </div>
+                    <!-- Port 2 -->
+                    <div class="flex-none w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.333rem)] snap-center group aspect-[4/5] bg-white/10 border border-white/20 backdrop-blur-md rounded-2xl overflow-hidden relative shadow-sm hover:shadow-2xl transition-all duration-500 cursor-pointer">
+                        <div class="absolute inset-0 bg-gradient-to-br from-slate-700/50 to-slate-800/50 mix-blend-multiply group-hover:scale-105 transition-transform duration-700 ease-out"></div>
+                        <div class="absolute inset-0 bg-white/5 group-hover:bg-white/0 transition-colors duration-500"></div>
+                        <div class="absolute bottom-0 left-0 w-full p-8 bg-gradient-to-t from-black/90 via-black/60 to-transparent">
+                            <h4 class="text-white text-xl font-medium translatable" data-i18n="port_2_title">Sistem Manajemen Data</h4>
+                            <p class="text-white/80 text-sm font-light mt-2 tracking-wide uppercase">Enterprise Software</p>
+                        </div>
+                    </div>
+                    <!-- Port 3 -->
+                    <div class="flex-none w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.333rem)] snap-center group aspect-[4/5] bg-white/10 border border-white/20 backdrop-blur-md rounded-2xl overflow-hidden relative shadow-sm hover:shadow-2xl transition-all duration-500 cursor-pointer">
+                        <div class="absolute inset-0 bg-gradient-to-br from-slate-800/50 to-slate-900/50 mix-blend-multiply group-hover:scale-105 transition-transform duration-700 ease-out"></div>
+                        <div class="absolute inset-0 bg-white/5 group-hover:bg-white/0 transition-colors duration-500"></div>
+                        <div class="absolute bottom-0 left-0 w-full p-8 bg-gradient-to-t from-black/90 via-black/60 to-transparent">
+                            <h4 class="text-white text-xl font-medium translatable" data-i18n="port_3_title">Aplikasi Finansial</h4>
+                            <p class="text-white/80 text-sm font-light mt-2 tracking-wide uppercase">Mobile & Web App</p>
+                        </div>
+                    </div>
+                    <!-- Port 4 -->
+                    <div class="flex-none w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.333rem)] snap-center group aspect-[4/5] bg-white/10 border border-white/20 backdrop-blur-md rounded-2xl overflow-hidden relative shadow-sm hover:shadow-2xl transition-all duration-500 cursor-pointer">
+                        <div class="absolute inset-0 bg-gradient-to-br from-slate-900/50 to-slate-950/50 mix-blend-multiply group-hover:scale-105 transition-transform duration-700 ease-out"></div>
+                        <div class="absolute inset-0 bg-white/5 group-hover:bg-white/0 transition-colors duration-500"></div>
+                        <div class="absolute bottom-0 left-0 w-full p-8 bg-gradient-to-t from-black/90 via-black/60 to-transparent">
+                            <h4 class="text-white text-xl font-medium translatable" data-i18n="port_4_title">Platform Edukasi</h4>
+                            <p class="text-white/80 text-sm font-light mt-2 tracking-wide uppercase">EdTech Solution</p>
+                        </div>
+                    </div>
+                    <!-- Port 5 -->
+                    <div class="flex-none w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.333rem)] snap-center group aspect-[4/5] bg-white/10 border border-white/20 backdrop-blur-md rounded-2xl overflow-hidden relative shadow-sm hover:shadow-2xl transition-all duration-500 cursor-pointer">
+                        <div class="absolute inset-0 bg-gradient-to-br from-slate-700/50 to-slate-900/50 mix-blend-multiply group-hover:scale-105 transition-transform duration-700 ease-out"></div>
+                        <div class="absolute inset-0 bg-white/5 group-hover:bg-white/0 transition-colors duration-500"></div>
+                        <div class="absolute bottom-0 left-0 w-full p-8 bg-gradient-to-t from-black/90 via-black/60 to-transparent">
+                            <h4 class="text-white text-xl font-medium translatable" data-i18n="port_5_title">Aplikasi Kesehatan</h4>
+                            <p class="text-white/80 text-sm font-light mt-2 tracking-wide uppercase">HealthTech App</p>
+                        </div>
+                    </div>
+                    <!-- Port 6 -->
+                    <div class="flex-none w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.333rem)] snap-center group aspect-[4/5] bg-white/10 border border-white/20 backdrop-blur-md rounded-2xl overflow-hidden relative shadow-sm hover:shadow-2xl transition-all duration-500 cursor-pointer">
+                        <div class="absolute inset-0 bg-gradient-to-br from-slate-800/50 to-slate-950/50 mix-blend-multiply group-hover:scale-105 transition-transform duration-700 ease-out"></div>
+                        <div class="absolute inset-0 bg-white/5 group-hover:bg-white/0 transition-colors duration-500"></div>
+                        <div class="absolute bottom-0 left-0 w-full p-8 bg-gradient-to-t from-black/90 via-black/60 to-transparent">
+                            <h4 class="text-white text-xl font-medium translatable" data-i18n="port_6_title">Portal Real Estate</h4>
+                            <p class="text-white/80 text-sm font-light mt-2 tracking-wide uppercase">Web Portal</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="contact" class="mt-auto bg-black text-white rounded-t-[3rem] pt-28 pb-12 px-6 md:px-12 lg:px-24 border-t border-white/10 relative">
+            <div class="max-w-7xl mx-auto flex flex-col items-center text-center relative z-10">
+                <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl mb-6 font-medium text-white translatable" data-i18n="footer_title">
+                    Kembangkan Bisnis Anda Bersama Kami
+                </h2>
+                <p class="text-white/70 font-light max-w-xl mb-12 text-lg leading-relaxed translatable" data-i18n="footer_desc">
+                    Hubungi tim kami untuk konsultasi eksklusif mengenai kebutuhan digital Anda.
+                </p>
+                <a href="https://wa.me/6285111401181" target="_blank" class="inline-flex items-center justify-center px-10 py-5 bg-white text-black text-sm tracking-[0.15em] uppercase font-medium hover:bg-slate-200 transition-all duration-300 rounded-full hover:scale-105 shadow-xl shadow-white/10 group translatable">
+                    <span data-i18n="cta_whatsapp">Hubungi via WhatsApp</span>
+                    <svg class="w-4 h-4 ml-3 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </a>
+                
+                <img src="reternia.svg" alt="Reternia Logo" class="h-12 md:h-16 w-auto mt-24 opacity-80 hover:opacity-100 transition-opacity">
+                
+                <div class="w-full mt-16 pt-8 border-t border-white/10 flex justify-center items-center text-sm text-white/50 font-light">
+                    <p class="translatable text-center" data-i18n="footer_rights">© 2026 RETERNIA. Hak cipta dilindungi undang-undang.</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="three.min.js"></script>
+    <script src="vanta.halo.min.js"></script>
+    <script>
+        // Initialize Vanta
+        document.addEventListener('DOMContentLoaded', () => {
+            VANTA.HALO({
+                el: "#vanta-bg",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                amplitudeFactor: 3.00,
+                size: 2.00
+            });
+            
+            // Auto Scroll Portfolio
+            const scrollContainer = document.getElementById('portfolio-scroll');
+            if (scrollContainer) {
+                setInterval(() => {
+                    // Check if we reached the end of the scroll container
+                    if (scrollContainer.scrollLeft + scrollContainer.clientWidth >= scrollContainer.scrollWidth - 10) {
+                        scrollContainer.scrollTo({left: 0, behavior: 'smooth'});
+                    } else {
+                        // find the width of one card + gap (32px)
+                        const cardWidth = scrollContainer.children[0].offsetWidth + 32; 
+                        scrollContainer.scrollBy({left: cardWidth, behavior: 'smooth'});
+                    }
+                }, 3000);
+            }
+        });
+
+        // Translation Dictionary
+        const translations = {
+            id: {
+                nav_services: "Layanan",
+                nav_portfolio: "Testimoni",
+                nav_contact: "Kontak",
+                hero_headline: "Mengubah Ide Kompleks Menjadi Produk Digital Berkualitas Tinggi.",
+                hero_subheadline: "Rumah perangkat lunak premium yang mendedikasikan diri pada estetika, performa, dan inovasi tanpa batas.",
+                cta_discuss: "Diskusikan Proyek",
+                services_title: "Layanan",
+                service_1_title: "Situs Web Perusahaan",
+                service_1_desc: "Kehadiran digital yang elegan dan responsif, dirancang khusus untuk mencerminkan identitas premium merek Anda.",
+                service_2_title: "Otomatisasi AI",
+                service_2_desc: "Integrasi kecerdasan buatan mutakhir untuk menyederhanakan alur kerja dan meningkatkan efisiensi operasional.",
+                service_3_title: "Solusi Enterprise Kustom",
+                service_3_desc: "Pengembangan perangkat lunak skala bisnis yang dirancang khusus untuk mengoptimalkan operasi dan skalabilitas perusahaan Anda.",
+                portfolio_title: "Testimoni",
+                portfolio_subtitle: "Bekerjasama dengan",
+                port_1_title: "E-Commerce Mewah",
+                port_2_title: "Sistem Manajemen Data",
+                port_3_title: "Aplikasi Finansial",
+                port_4_title: "Platform Edukasi",
+                port_5_title: "Aplikasi Kesehatan",
+                port_6_title: "Portal Real Estate",
+                footer_title: "Kembangkan Bisnis Anda Bersama Kami",
+                footer_desc: "Hubungi tim kami untuk konsultasi eksklusif mengenai kebutuhan digital Anda.",
+                cta_whatsapp: "Hubungi via WhatsApp",
+                footer_rights: "© 2026 RETERNIA. Hak cipta dilindungi undang-undang."
+            },
+            en: {
+                nav_services: "Services",
+                nav_portfolio: "Testimonials",
+                nav_contact: "Contact",
+                hero_headline: "Transforming Complex Ideas into High-Quality Digital Products.",
+                hero_subheadline: "A premium software house dedicated to aesthetics, performance, and boundless innovation.",
+                cta_discuss: "Discuss Project",
+                services_title: "Services",
+                service_1_title: "Company Website",
+                service_1_desc: "Elegant and responsive digital presence, tailored to reflect your brand's premium identity.",
+                service_2_title: "AI Automation",
+                service_2_desc: "Cutting-edge artificial intelligence integration to streamline workflows and boost operational efficiency.",
+                service_3_title: "Custom Enterprise Solutions",
+                service_3_desc: "Custom-built, scalable software solutions designed specifically to optimize operations and accelerate your business growth.",
+                portfolio_title: "Testimonials",
+                portfolio_subtitle: "Partnering with",
+                port_1_title: "Luxury E-Commerce",
+                port_2_title: "Data Management System",
+                port_3_title: "Financial Application",
+                port_4_title: "Education Platform",
+                port_5_title: "Healthcare App",
+                port_6_title: "Real Estate Portal",
+                footer_title: "Grow Your Business With Us",
+                footer_desc: "Contact our team for an exclusive consultation regarding your digital needs.",
+                cta_whatsapp: "Contact via WhatsApp",
+                footer_rights: "© 2026 RETERNIA. All rights reserved."
+            }
+        };
+
+        // State Management
+        let currentLang = 'id';
+
+        function setLang(lang) {
+            if (lang === currentLang) return;
+            currentLang = lang;
+            
+            // Update Document Lang
+            document.documentElement.lang = lang;
+
+            // Update Buttons Styling
+            const btnId = document.getElementById('btn-id');
+            const btnEn = document.getElementById('btn-en');
+            
+            if (lang === 'id') {
+                btnId.classList.remove('text-white/50');
+                btnId.classList.add('text-white');
+                btnEn.classList.remove('text-white');
+                btnEn.classList.add('text-white/50');
+            } else {
+                btnEn.classList.remove('text-white/50');
+                btnEn.classList.add('text-white');
+                btnId.classList.remove('text-white');
+                btnId.classList.add('text-white/50');
+            }
+
+            // Update Text with smooth transition
+            const elements = document.querySelectorAll('[data-i18n]');
+            
+            // Fade out
+            elements.forEach(el => {
+                el.classList.add('fade-out');
+            });
+
+            // Change text and fade in after a short delay
+            setTimeout(() => {
+                elements.forEach(el => {
+                    const key = el.getAttribute('data-i18n');
+                    if (translations[lang][key]) {
+                        
+                        // if this is a button or link with an icon, we need to preserve inner HTML structure
+                        // Check if it has child nodes other than text
+                        const hasElements = Array.from(el.childNodes).some(node => node.nodeType === 1);
+                        
+                        if (hasElements) {
+                            // Find the text node to replace, or span containing text
+                            const span = el.querySelector('span[data-i18n]');
+                            if(span) {
+                                span.textContent = translations[lang][key];
+                            } else {
+                                el.textContent = translations[lang][key];
+                            }
+                        } else {
+                            el.textContent = translations[lang][key];
+                        }
+                    }
+                    el.classList.remove('fade-out');
+                });
+            }, 300); // 300ms matches the CSS transition time
+        }
+    </script>
+</body>
+</html>
