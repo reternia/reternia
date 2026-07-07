@@ -1,0 +1,20 @@
+{
+  "name": "reternia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-akunB:reternia/reternia.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "animejs": "^4.5.0"
+  }
+}
