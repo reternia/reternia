@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="id" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,14 +11,14 @@
     <script src="tailwind.js"></script>
     <!-- Google Fonts -->
     <link href="fonts.css" rel="stylesheet">
-    
+
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['Cocogoose', 'sans-serif'],
+                        serif: ['Cocogoose', 'sans-serif'],
                     },
                     colors: {
                         slate: {
@@ -30,6 +31,14 @@
         }
     </script>
     <style>
+        @font-face {
+            font-family: 'Cocogoose';
+            src: url('fonts/cocogoose/Cocogoose-Pro-Regular-trial.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
         /* Base Vanta Layer */
         #vanta-bg {
             position: fixed;
@@ -57,7 +66,7 @@
         .translatable {
             transition: opacity 0.3s ease;
         }
-        
+
         .fade-out {
             opacity: 0;
         }
@@ -66,6 +75,7 @@
         .hide-scrollbar::-webkit-scrollbar {
             display: none;
         }
+
         .hide-scrollbar {
             -ms-overflow-style: none;
             scrollbar-width: none;
@@ -73,131 +83,193 @@
 
         /* Marquee Animation */
         @keyframes marquee {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(calc(-50% - 16px)); } /* 16px is half of the 32px gap */
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(calc(-50% - 16px));
+            }
+
+            /* 16px is half of the 32px gap */
         }
+
         .animate-marquee {
             animation: marquee 35s linear infinite;
         }
     </style>
 </head>
-<body class="text-black font-sans antialiased selection:bg-black selection:text-white overflow-x-hidden bg-white">
 
-    <!-- Layer 1: Vanta Background (Disabled) -->
-    <!-- <div id="vanta-bg"></div> -->
+<body class="text-white font-sans antialiased selection:bg-white selection:text-black overflow-x-hidden bg-neutral-900">
+
+    <!-- Layer 1: Anime.js 3D Background -->
+    <div class="full-container fixed inset-0 z-0 pointer-events-none" style="color: #6b7280;"></div>
 
     <!-- Layer 2: Glass Overlay (Disabled) -->
     <!-- <div class="glass-overlay"></div> -->
 
     <!-- Layer 3: Content -->
     <div class="relative z-10 flex flex-col min-h-screen">
-        
+
         <!-- Navbar -->
-        <nav id="navbar" class="fixed top-0 left-0 w-full px-6 py-4 md:px-12 lg:px-24 flex justify-between items-center bg-transparent border-b border-transparent z-50 transition-all duration-300">
-            
-            <!-- Text Logo Left -->
-            <a href="#" class="font-serif text-2xl tracking-[0.2em] uppercase font-medium text-black hover:opacity-70 transition-opacity relative z-20">
-                Reternia
-            </a>
-            
+        <nav id="navbar"
+            class="fixed top-0 left-0 w-full px-6 py-4 md:px-12 lg:px-24 flex justify-between items-center bg-transparent border-b border-transparent z-50 transition-all duration-300">
+
+            <!-- Empty placeholder to keep Language Switcher on the right -->
+            <div class="w-24"></div>
+
             <!-- SVG Logo Centered -->
             <a href="#" class="absolute left-1/2 -translate-x-1/2 hover:opacity-70 transition-opacity z-10">
-                <img src="reternia.svg" alt="Reternia Logo" class="h-12 md:h-16 w-auto brightness-0">
+                <img src="reternia.svg" alt="Reternia Logo" class="h-12 md:h-16 w-auto brightness-0 invert">
             </a>
 
             <!-- Language Switcher -->
-            <div class="flex items-center space-x-3 text-xs font-medium tracking-widest bg-gray-100 backdrop-blur-md px-4 py-2 rounded-full border border-black/10 shadow-sm relative z-20">
-                <button onclick="setLang('id')" id="btn-id" class="transition-colors hover:text-black text-black">ID</button>
-                <span class="text-black/30">|</span>
-                <button onclick="setLang('en')" id="btn-en" class="transition-colors hover:text-black text-black/50">EN</button>
+            <div class="flex items-center space-x-3 text-xs font-medium tracking-widest px-4 py-2 relative z-20">
+                <button onclick="setLang('id')" id="btn-id"
+                    class="transition-colors hover:text-white text-white">ID</button>
+                <span class="text-white/30">|</span>
+                <button onclick="setLang('en')" id="btn-en"
+                    class="transition-colors hover:text-white text-white/50">EN</button>
             </div>
         </nav>
 
-        <!-- Hero Section -->
-        <main class="flex-grow flex flex-col justify-center min-h-screen px-6 py-24 md:px-12 lg:px-24 lg:py-32 max-w-7xl mx-auto w-full">
-            <div class="max-w-4xl">
-                <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl leading-[1.05] font-medium text-black mb-8 translatable" data-i18n="hero_headline">
-                    Eksekusi Sempurna untuk Bisnis Anda.
-                </h1>
-                <p class="text-lg md:text-xl font-light text-black/80 max-w-2xl mb-12 leading-relaxed translatable" data-i18n="hero_subheadline">
-                    Rumah perangkat lunak premium yang mendedikasikan diri pada estetika, performa, dan inovasi tanpa batas.
-                </p>
-                <a href="https://wa.me/6285111401181" target="_blank" class="inline-flex items-center justify-center px-8 py-4 bg-black text-white text-sm tracking-[0.15em] uppercase font-medium hover:bg-gray-800 transition-all duration-300 rounded-full hover:shadow-2xl hover:shadow-black/20 group translatable">
-                    <span data-i18n="cta_discuss">Diskusikan Bisnis</span>
-                    <svg class="w-4 h-4 ml-3 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
-                </a>
-            </div>
-        </main>
+        <!-- Grid Wrapper for 5-Col Layout -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 w-full flex-grow">
+            <!-- Left 4 Cols Content -->
+            <div class="lg:col-span-4 flex flex-col z-20">
 
-        <!-- Portfolio Section -->
-        <section id="portfolio" class="px-6 py-32 md:px-12 lg:px-24 bg-gray-50 border-y border-black/5">
-            <div class="max-w-7xl mx-auto">
-                <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
-                    <div>
-                        <h2 class="font-serif text-3xl md:text-4xl text-black mb-4 translatable" data-i18n="portfolio_title">Klien Kami</h2>
-                        <p class="text-black/80 font-medium translatable max-w-2xl leading-relaxed" data-i18n="portfolio_subtitle">Berikut adalah beberapa klien dan mitra yang telah mempercayakan perjalanan transformasi digital mereka bersama kami.</p>
-                    </div>
-                </div>
-
-                <div class="overflow-hidden whitespace-nowrap w-full">
-                    <div id="portfolio-scroll" class="flex w-max gap-8 pb-8 animate-marquee">
-                        <!-- Cards will be dynamically injected here via JS -->
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Services Section -->
-        <section id="services" class="px-6 py-24 md:px-12 lg:px-24">
-            <div class="max-w-7xl mx-auto">
-                <h2 class="font-serif text-3xl md:text-4xl text-black mb-16 translatable" data-i18n="services_title">Layanan</h2>
-                
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
-                    <!-- Service 1 -->
-                    <div class="group cursor-pointer p-8 md:p-10 rounded-3xl bg-gray-50 border border-black/5 hover:bg-gray-100 hover:border-black/10 transition-all duration-300">
-                        <h3 class="text-2xl font-medium text-black mb-4 translatable" data-i18n="service_1_title">Situs Web Perusahaan</h3>
-                        <p class="text-black/70 font-light leading-relaxed translatable" data-i18n="service_1_desc">
-                            Kehadiran digital yang elegan dan responsif, dirancang khusus untuk mencerminkan identitas premium merek Anda.
+                <!-- Hero Section -->
+                <main class="flex flex-col justify-center min-h-screen px-6 py-24 md:px-12 w-full">
+                    <div class="w-full">
+                        <h1 class="font-sans text-5xl md:text-6xl xl:text-7xl leading-[1.05] font-medium text-white mb-8 translatable scroll-reveal"
+                            data-i18n="hero_headline">
+                            Eksekusi Sempurna untuk Bisnis Anda.
+                        </h1>
+                        <p class="text-lg font-light text-white/80 max-w-xl mb-12 leading-relaxed translatable scroll-reveal"
+                            data-i18n="hero_subheadline">
+                            Rumah perangkat lunak premium yang mendedikasikan diri pada estetika, performa, dan inovasi
+                            tanpa batas.
                         </p>
+                        <a href="https://wa.me/6285111401181" target="_blank"
+                            class="inline-flex items-center justify-center px-8 py-4 bg-white text-black text-sm tracking-[0.15em] uppercase font-medium hover:bg-gray-200 transition-all duration-300 rounded-full hover:shadow-2xl hover:shadow-white/20 group translatable">
+                            <span data-i18n="cta_discuss">Diskusikan Bisnis</span>
+                            <svg class="w-4 h-4 ml-3 group-hover:translate-x-1 transition-transform" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                            </svg>
+                        </a>
                     </div>
+                </main>
 
-                    <!-- Service 2 -->
-                    <div class="group cursor-pointer p-8 md:p-10 rounded-3xl bg-gray-50 border border-black/5 hover:bg-gray-100 hover:border-black/10 transition-all duration-300">
-                        <h3 class="text-2xl font-medium text-black mb-4 translatable" data-i18n="service_2_title">Otomatisasi AI</h3>
-                        <p class="text-black/70 font-light leading-relaxed translatable" data-i18n="service_2_desc">
-                            Integrasi kecerdasan buatan mutakhir untuk menyederhanakan alur kerja dan meningkatkan efisiensi operasional.
-                        </p>
-                    </div>
+                <!-- Services Section -->
+                <section id="services" class="px-6 py-24 md:px-12 border-t border-white/5 mt-[50vh]">
+                    <div class="w-full">
+                        <h2 class="font-serif text-6xl md:text-7xl text-[#FF9E20] mb-16 translatable scroll-reveal"
+                            data-i18n="services_title">Layanan</h2>
 
-                    <!-- Service 3 -->
-                    <div class="group cursor-pointer p-8 md:p-10 rounded-3xl bg-gray-50 border border-black/5 hover:bg-gray-100 hover:border-black/10 transition-all duration-300">
-                        <h3 class="text-2xl font-medium text-black mb-4 translatable" data-i18n="service_3_title">Solusi Enterprise Kustom</h3>
-                        <p class="text-black/70 font-light leading-relaxed translatable" data-i18n="service_3_desc">
-                            Pengembangan perangkat lunak skala bisnis yang dirancang khusus untuk mengoptimalkan operasi dan skalabilitas perusahaan Anda.
-                        </p>
+                        <div class="flex flex-col gap-[30vh] w-full">
+                            <!-- Service 1 -->
+                            <div class="group cursor-pointer py-8 hover:-translate-y-1 transition-all duration-300">
+                                <h3 class="text-4xl font-medium text-[#34A99D] mb-6 translatable scroll-reveal"
+                                    data-i18n="service_1_title">Situs Web Perusahaan</h3>
+                                <ul class="text-base text-white/70 font-light leading-relaxed flex flex-col gap-3">
+                                    <li class="translatable scroll-reveal" data-i18n="service_1_desc_1">→ Desain Elegan
+                                        & Responsif</li>
+                                    <li class="translatable scroll-reveal" data-i18n="service_1_desc_2">→ Identitas
+                                        Merek Premium</li>
+                                    <li class="translatable scroll-reveal" data-i18n="service_1_desc_3">→ Performa
+                                        Optimal & Cepat</li>
+                                </ul>
+                            </div>
+
+                            <!-- Service 2 -->
+                            <div class="group cursor-pointer py-8 hover:-translate-y-1 transition-all duration-300">
+                                <h3 class="text-4xl font-medium text-[#34A99D] mb-6 translatable scroll-reveal"
+                                    data-i18n="service_2_title">Otomatisasi AI</h3>
+                                <ul class="text-base text-white/70 font-light leading-relaxed flex flex-col gap-3">
+                                    <li class="translatable scroll-reveal" data-i18n="service_2_desc_1">→ Integrasi
+                                        Kecerdasan Buatan</li>
+                                    <li class="translatable scroll-reveal" data-i18n="service_2_desc_2">→ Penyederhanaan
+                                        Alur Kerja</li>
+                                    <li class="translatable scroll-reveal" data-i18n="service_2_desc_3">→ Peningkatan
+                                        Efisiensi Operasional</li>
+                                </ul>
+                            </div>
+
+                            <!-- Service 3 -->
+                            <div class="group cursor-pointer py-8 hover:-translate-y-1 transition-all duration-300">
+                                <h3 class="text-4xl font-medium text-[#34A99D] mb-6 translatable scroll-reveal"
+                                    data-i18n="service_3_title">Solusi Enterprise Kustom</h3>
+                                <ul class="text-base text-white/70 font-light leading-relaxed flex flex-col gap-3">
+                                    <li class="translatable scroll-reveal" data-i18n="service_3_desc_1">→ Pengembangan
+                                        Skala Bisnis</li>
+                                    <li class="translatable scroll-reveal" data-i18n="service_3_desc_2">→ Optimasi
+                                        Operasional Terpadu</li>
+                                    <li class="translatable scroll-reveal" data-i18n="service_3_desc_3">→ Skalabilitas
+                                        Jangka Panjang</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </section>
+
+                <!-- Portfolio Section -->
+                <section id="portfolio" class="px-6 py-24 md:px-12 mt-[50vh] mb-[50vh]">
+                    <div class="w-full">
+                        <div class="flex flex-col mb-16 gap-6">
+                            <div>
+                                <h2 class="font-serif text-6xl md:text-7xl text-[#FF9E20] mb-4 translatable scroll-reveal"
+                                    data-i18n="portfolio_title">Klien Kami</h2>
+                                <p class="text-3xl text-white/80 font-medium translatable max-w-xl leading-relaxed scroll-reveal"
+                                    data-i18n="portfolio_subtitle"></p>
+                            </div>
+                        </div>
+
+                        <div class="w-full">
+                            <div id="portfolio-scroll" class="grid grid-cols-2 gap-6 w-full">
+                                <!-- Cards will be dynamically injected here via JS -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
             </div>
-        </section>
+
+            <!-- Right 8 Cols Empty for 3D Background -->
+            <div class="hidden lg:block lg:col-span-8 pointer-events-none"></div>
+        </div>
 
         <!-- Footer -->
-        <footer id="contact" class="mt-auto bg-gray-50 text-black rounded-t-[3rem] pt-28 pb-12 px-6 md:px-12 lg:px-24 border-t border-black/5 relative">
+        <footer id="contact"
+            class="mt-auto bg-black text-white rounded-t-[3rem] pt-28 pb-12 px-6 md:px-12 lg:px-24 relative">
             <div class="max-w-7xl mx-auto flex flex-col items-center text-center relative z-10">
-                <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl mb-6 font-medium text-black translatable" data-i18n="footer_title">
+                <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl mb-6 font-medium text-white translatable scroll-reveal"
+                    data-i18n="footer_title">
                     Kembangkan Bisnis Anda Bersama Kami
                 </h2>
-                <p class="text-black/70 font-light max-w-xl mb-12 text-lg leading-relaxed translatable" data-i18n="footer_desc">
+                <p class="text-white/70 font-light max-w-xl mb-12 text-lg leading-relaxed translatable scroll-reveal"
+                    data-i18n="footer_desc">
                     Hubungi tim kami untuk konsultasi eksklusif mengenai kebutuhan digital Anda.
                 </p>
-                <a href="https://wa.me/6285111401181" target="_blank" class="inline-flex items-center justify-center px-10 py-5 bg-black text-white text-sm tracking-[0.15em] uppercase font-medium hover:bg-gray-800 transition-all duration-300 rounded-full hover:scale-105 shadow-xl shadow-black/10 group translatable">
+                <a href="https://wa.me/6285111401181" target="_blank"
+                    class="inline-flex items-center justify-center px-10 py-5 bg-white text-black text-sm tracking-[0.15em] uppercase font-medium hover:bg-gray-200 transition-all duration-300 rounded-full hover:scale-105 shadow-xl shadow-white/10 group translatable">
                     <span data-i18n="cta_whatsapp">Hubungi via WhatsApp</span>
-                    <svg class="w-4 h-4 ml-3 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    <svg class="w-4 h-4 ml-3 group-hover:translate-x-1 transition-transform" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                    </svg>
                 </a>
-                
-                <img src="reternia.svg" alt="Reternia Logo" class="h-12 md:h-16 w-auto mt-24 opacity-80 hover:opacity-100 transition-opacity brightness-0">
-                
-                <div class="w-full mt-16 pt-8 border-t border-black/10 flex justify-center items-center text-sm text-black/50 font-light">
-                    <p class="translatable text-center" data-i18n="footer_rights">© 2026 RETERNIA. Hak cipta dilindungi undang-undang.</p>
+
+                <img src="reternia.svg" alt="Reternia Logo"
+                    class="h-12 md:h-16 w-auto mt-24 opacity-80 hover:opacity-100 transition-opacity brightness-0 invert">
+
+                <div
+                    class="w-full mt-16 pt-8 border-t border-white/10 flex justify-center items-center text-sm text-white/50 font-light">
+                    <p class="translatable text-center tracking-widest" data-i18n="footer_rights"
+                        style="font-family: system-ui, -apple-system, sans-serif;">© 2026 RETERNIA. Hak cipta dilindungi
+                        undang-undang.</p>
                 </div>
             </div>
         </footer>
@@ -205,7 +277,121 @@
     </div>
 
     <!-- Scripts -->
-    <script src="anime.min.js"></script>
+    <script>
+        window.addEventListener('error', function (e) {
+            document.body.innerHTML += '<div style="position:fixed; z-index:9999; top:0; left:0; background:red; color:white; padding:20px;">' + e.message + ' at ' + e.filename + ':' + e.lineno + '</div>';
+        });
+        window.addEventListener('unhandledrejection', function (e) {
+            document.body.innerHTML += '<div style="position:fixed; z-index:9999; top:0; left:0; background:red; color:white; padding:20px;">Unhandled Promise: ' + e.reason + '</div>';
+        });
+    </script>
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "./node_modules/three/build/three.module.js",
+            "animejs": "./node_modules/animejs/dist/modules/index.js",
+            "animejs/adapters/three": "./node_modules/animejs/dist/modules/adapters/three/index.js"
+        }
+    }
+    </script>
+    <script type="module">
+        import { animate, createTimer, stagger, utils, onScroll, splitText } from 'animejs';
+        import * as THREE from 'three';
+        import { getInstances } from 'animejs/adapters/three';
+
+        // Three.js setup
+        const [$container] = utils.$('.full-container');
+        const width = window.innerWidth;
+        const height = window.innerHeight;
+
+        const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true, preserveDrawingBuffer: true });
+        renderer.shadowMap.enabled = true;
+        renderer.setSize(width, height);
+        renderer.setPixelRatio(window.devicePixelRatio);
+        $container.appendChild(renderer.domElement);
+
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(50, width / height, 0.01, 100);
+        camera.position.set(0, 0, 1.5);
+        scene.add(camera);
+
+        scene.add(new THREE.AmbientLight(0xffffff, 0.35));
+        const light = new THREE.DirectionalLight(0xffffff, 2);
+        light.position.set(2, 3, 4);
+        light.castShadow = true;
+        scene.add(light);
+
+        const gridSize = 6; // cubes per axis
+        const cellSize = 2 / gridSize; // size of each cube
+        const spread = (gridSize - 1) / 2 * cellSize; // distance from center to the outer cubes
+        const geometry = new THREE.BoxGeometry(cellSize, cellSize, cellSize);
+        const material = new THREE.MeshLambertMaterial({ color: '#ffffff' });
+        const mesh = new THREE.InstancedMesh(geometry, material, gridSize * gridSize * gridSize);
+        mesh.castShadow = mesh.receiveShadow = true;
+        scene.add(mesh);
+
+        // Animation with Three.js adapter
+        const instances = getInstances(mesh);
+
+        const palette = ['#7f1d1d', '#7c2d12', '#713f12', '#14532d', '#0c4a6e', '#581c87', '#831843'];
+        const gridAxis = (axis, span = spread) => stagger([-span, span], { grid: [gridSize, gridSize, gridSize], axis });
+
+        // SplitText animation for all `.scroll-reveal` elements
+        const textElements = document.querySelectorAll('.scroll-reveal');
+        textElements.forEach(el => {
+            splitText(el, { lines: { wrap: 'clip' } })
+                .addEffect(({ lines }) => {
+                    const anim = animate(lines, {
+                        y: ['100%', '0%'],
+                        opacity: [0, 1],
+                        duration: 500,
+                        ease: 'outQuart',
+                        delay: stagger(40),
+                        autoplay: false
+                    });
+
+                    onScroll({
+                        target: el,
+                        enter: '80% top',
+                        leave: '20% bottom',
+                        onEnter: () => anim.play(),
+                        onLeave: () => anim.reverse()
+                    });
+
+                    return anim;
+                });
+        });
+
+        // Slowly rotate the whole mesh based on scroll
+        animate(mesh, {
+            rotateY: 360,
+            rotateX: 360,
+            autoplay: onScroll({ sync: 0.1 }) // smoothly sync with scroll
+        });
+
+        // Color, scale and spread each instance, staggered from the center
+        animate(instances, {
+            color: palette,
+            x: [gridAxis('x', spread * .25), gridAxis('x')],
+            y: [gridAxis('y', spread * .25), gridAxis('y')],
+            z: [gridAxis('z', spread * .25), gridAxis('z')],
+            scale: [0.1, 0.25], // we remove the final .1 so they end up fully visible
+            delay: stagger([0, 3000], { grid: [gridSize, gridSize, gridSize], from: 'center', reversed: true }),
+            autoplay: onScroll({ sync: 0.15 }) // smoothly sync with scroll using Anime.js built-in
+        });
+
+        createTimer({ onUpdate: () => renderer.render(scene, camera) });
+
+        // Handle Window Resize
+        window.addEventListener('resize', () => {
+            const newWidth = window.innerWidth;
+            const newHeight = window.innerHeight;
+            camera.aspect = newWidth / newHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(newWidth, newHeight);
+        });
+    </script>
+    <!-- Original Scripts -->
     <!-- <script src="three.min.js"></script> -->
     <!-- <script src="vanta.halo.min.js"></script> -->
     <script>
@@ -223,18 +409,8 @@
                 size: 2.00
             });
             */
-            
-            // Navbar Scroll Effect
-            const navbar = document.getElementById('navbar');
-            window.addEventListener('scroll', () => {
-                if (window.scrollY > 50) {
-                    navbar.classList.remove('bg-transparent', 'border-transparent');
-                    navbar.classList.add('bg-white/90', 'backdrop-blur-md', 'border-black/10');
-                } else {
-                    navbar.classList.add('bg-transparent', 'border-transparent');
-                    navbar.classList.remove('bg-white/90', 'backdrop-blur-md', 'border-black/10');
-                }
-            });
+
+            // Navbar remains pure transparent at all times
 
             // Auto Scroll Portfolio (Infinite Marquee)
             const scrollContainer = document.getElementById('portfolio-scroll');
@@ -249,29 +425,33 @@
                             translations.id[`port_${item.id}_category`] = item.category.id;
                             translations.en[`port_${item.id}_title`] = item.title.en;
                             translations.en[`port_${item.id}_category`] = item.category.en;
-                            
+
                             // Render HTML
-                            const imageTag = item.image ? `<img src="${item.image}" alt="${item.title.id}" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out z-0">` : '';
                             const wrapperTag = item.link && item.link !== "#" && item.link !== "" ? 'a' : 'div';
-                            const linkAttr = wrapperTag === 'a' ? `href="${item.link}" target="_blank" rel="noopener noreferrer"` : '';
-                            const visitIcon = wrapperTag === 'a' ? `<svg class="w-5 h-5 absolute top-6 right-6 text-black/30 group-hover:text-black transition-colors z-20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>` : '';
-                            
+                            const hrefAttr = wrapperTag === 'a' ? `href="${item.link}"` : '';
+                            const targetAttr = wrapperTag === 'a' ? `target="_blank" rel="noopener noreferrer"` : '';
+                            const visitIcon = wrapperTag === 'a' ? `<svg class="w-8 h-8 absolute top-6 right-6 text-white/30 group-hover:text-white transition-colors z-20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>` : '';
+
                             allCards += `
-                                <${wrapperTag} ${linkAttr} class="block flex-none w-[280px] md:w-[350px] lg:w-[400px] group aspect-[4/5] bg-white border border-black/10 backdrop-blur-md rounded-2xl overflow-hidden relative shadow-sm hover:shadow-xl transition-all duration-500 cursor-pointer">
-                                    ${imageTag}
-                                    <div class="absolute inset-0 bg-gradient-to-br from-gray-100/50 to-gray-50/50 ${item.image ? 'opacity-80' : 'mix-blend-multiply'} group-hover:scale-105 transition-transform duration-700 ease-out z-10"></div>
-                                    <div class="absolute inset-0 bg-black/5 group-hover:bg-black/0 transition-colors duration-500 z-10"></div>
-                                    ${visitIcon}
-                                    <div class="absolute bottom-0 left-0 w-full p-8 bg-gradient-to-t from-white/95 via-white/80 to-transparent z-20 whitespace-normal">
-                                        <h4 class="text-black text-xl font-medium translatable" data-i18n="port_${item.id}_title">${item.title[currentLang]}</h4>
-                                        <p class="text-black/70 text-sm font-medium mt-2 tracking-wide uppercase translatable" data-i18n="port_${item.id}_category">${item.category[currentLang]}</p>
+                                <${wrapperTag} ${hrefAttr} ${targetAttr} class="group block relative w-full overflow-hidden cursor-pointer scroll-reveal">
+                                    <div class="aspect-[4/5] w-full overflow-hidden relative">
+                                        <!-- Gradient Overlay -->
+                                        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-500 z-10"></div>
+                                        ${visitIcon}
+                                        <img src="${item.image}" alt="${item.title[currentLang]}" class="w-full h-full object-cover grayscale opacity-70 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-out">
+                                        
+                                        <!-- Text overlay on image -->
+                                        <div class="absolute bottom-0 left-0 p-4 z-20 transition-transform duration-500">
+                                            <h4 class="text-white text-xl md:text-2xl font-medium translatable tracking-wide" data-i18n="port_${item.id}_title">${item.title[currentLang]}</h4>
+                                            <p class="text-[#34A99D] text-xs md:text-sm font-medium mt-1 tracking-widest uppercase translatable" data-i18n="port_${item.id}_category">${item.category[currentLang]}</p>
+                                        </div>
                                     </div>
                                 </${wrapperTag}>
                             `;
                         });
-                        
-                        // Inject twice for infinite seamless scroll
-                        scrollContainer.innerHTML = allCards + allCards;
+
+                        // Inject once for standard grid
+                        scrollContainer.innerHTML = allCards;
                     })
                     .catch(err => console.error("Error loading portfolio:", err));
             }
@@ -294,11 +474,10 @@
                 service_3_title: "Solusi Enterprise Kustom",
                 service_3_desc: "Pengembangan perangkat lunak skala bisnis yang dirancang khusus untuk mengoptimalkan operasi dan skalabilitas perusahaan Anda.",
                 portfolio_title: "Klien Kami",
-                portfolio_subtitle: "Berikut adalah beberapa klien dan mitra yang telah mempercayakan perjalanan transformasi digital mereka bersama kami.",
                 footer_title: "Kembangkan Bisnis Anda Bersama Kami",
                 footer_desc: "Hubungi tim kami untuk konsultasi eksklusif mengenai kebutuhan digital Anda.",
                 cta_whatsapp: "Hubungi via WhatsApp",
-                footer_rights: "© 2026 RETERNIA. Hak cipta dilindungi undang-undang."
+                footer_rights: "© 2026 RETERNIA. All rights reserved."
             },
             en: {
                 nav_services: "Services",
@@ -315,7 +494,6 @@
                 service_3_title: "Custom Enterprise Solutions",
                 service_3_desc: "Custom-built, scalable software solutions designed specifically to optimize operations and accelerate your business growth.",
                 portfolio_title: "Our Clients",
-                portfolio_subtitle: "Here are some of the clients and partners who have trusted us with their digital transformation journey.",
                 footer_title: "Grow Your Business With Us",
                 footer_desc: "Contact our team for an exclusive consultation regarding your digital needs.",
                 cta_whatsapp: "Contact via WhatsApp",
@@ -329,29 +507,28 @@
         function setLang(lang) {
             if (lang === currentLang) return;
             currentLang = lang;
-            
+
             // Update Document Lang
             document.documentElement.lang = lang;
 
             // Update Buttons Styling
             const btnId = document.getElementById('btn-id');
             const btnEn = document.getElementById('btn-en');
-            
-            if (lang === 'id') {
-                btnId.classList.remove('text-black/50');
-                btnId.classList.add('text-black');
-                btnEn.classList.remove('text-black');
-                btnEn.classList.add('text-black/50');
+            if (currentLang === 'id') {
+                btnId.classList.remove('text-white/50');
+                btnId.classList.add('text-white');
+                btnEn.classList.remove('text-white');
+                btnEn.classList.add('text-white/50');
             } else {
-                btnEn.classList.remove('text-black/50');
-                btnEn.classList.add('text-black');
-                btnId.classList.remove('text-black');
-                btnId.classList.add('text-black/50');
+                btnEn.classList.remove('text-white/50');
+                btnEn.classList.add('text-white');
+                btnId.classList.remove('text-white');
+                btnId.classList.add('text-white/50');
             }
 
             // Update Text with smooth transition
             const elements = document.querySelectorAll('[data-i18n]');
-            
+
             // Fade out
             elements.forEach(el => {
                 el.classList.add('fade-out');
@@ -362,15 +539,15 @@
                 elements.forEach(el => {
                     const key = el.getAttribute('data-i18n');
                     if (translations[lang][key]) {
-                        
+
                         // if this is a button or link with an icon, we need to preserve inner HTML structure
                         // Check if it has child nodes other than text
                         const hasElements = Array.from(el.childNodes).some(node => node.nodeType === 1);
-                        
+
                         if (hasElements) {
                             // Find the text node to replace, or span containing text
                             const span = el.querySelector('span[data-i18n]');
-                            if(span) {
+                            if (span) {
                                 span.textContent = translations[lang][key];
                             } else {
                                 el.textContent = translations[lang][key];
@@ -385,4 +562,5 @@
         }
     </script>
 </body>
+
 </html>

@@ -15,6 +15,7 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "animejs": "^4.5.0"
+    "animejs": "^4.5.0",
+    "three": "^0.185.1"
   }
 }
