@@ -245,8 +245,7 @@
             // Auto Scroll Portfolio (Infinite Marquee)
             const scrollContainer = document.getElementById('portfolio-scroll');
             if (scrollContainer) {
-                // Load Portfolio
-                fetch('portfolio.json')
+                fetch('portfolio.json?v=' + new Date().getTime())
                     .then(response => response.json())
                     .then(data => {
                         let allCards = '';
