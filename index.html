@@ -81,13 +81,13 @@
         }
     </style>
 </head>
-<body class="text-white font-sans antialiased selection:bg-white selection:text-black overflow-x-hidden bg-black">
+<body class="text-black font-sans antialiased selection:bg-black selection:text-white overflow-x-hidden bg-white">
 
-    <!-- Layer 1: Vanta Background -->
-    <div id="vanta-bg"></div>
+    <!-- Layer 1: Vanta Background (Disabled) -->
+    <!-- <div id="vanta-bg"></div> -->
 
-    <!-- Layer 2: Glass Overlay -->
-    <div class="glass-overlay"></div>
+    <!-- Layer 2: Glass Overlay (Disabled) -->
+    <!-- <div class="glass-overlay"></div> -->
 
     <!-- Layer 3: Content -->
     <div class="relative z-10 flex flex-col min-h-screen">
@@ -96,33 +96,33 @@
         <nav id="navbar" class="fixed top-0 left-0 w-full px-6 py-4 md:px-12 lg:px-24 flex justify-between items-center bg-transparent border-b border-transparent z-50 transition-all duration-300">
             
             <!-- Text Logo Left -->
-            <a href="#" class="font-serif text-2xl tracking-[0.2em] uppercase font-medium text-white hover:opacity-70 transition-opacity relative z-20">
+            <a href="#" class="font-serif text-2xl tracking-[0.2em] uppercase font-medium text-black hover:opacity-70 transition-opacity relative z-20">
                 Reternia
             </a>
             
             <!-- SVG Logo Centered -->
             <a href="#" class="absolute left-1/2 -translate-x-1/2 hover:opacity-70 transition-opacity z-10">
-                <img src="reternia.svg" alt="Reternia Logo" class="h-12 md:h-16 w-auto">
+                <img src="reternia.svg" alt="Reternia Logo" class="h-12 md:h-16 w-auto brightness-0">
             </a>
 
             <!-- Language Switcher -->
-            <div class="flex items-center space-x-3 text-xs font-medium tracking-widest bg-black/40 backdrop-blur-md px-4 py-2 rounded-full border border-white/20 shadow-sm relative z-20">
-                <button onclick="setLang('id')" id="btn-id" class="transition-colors hover:text-white text-white">ID</button>
-                <span class="text-white/30">|</span>
-                <button onclick="setLang('en')" id="btn-en" class="transition-colors hover:text-white text-white/50">EN</button>
+            <div class="flex items-center space-x-3 text-xs font-medium tracking-widest bg-gray-100 backdrop-blur-md px-4 py-2 rounded-full border border-black/10 shadow-sm relative z-20">
+                <button onclick="setLang('id')" id="btn-id" class="transition-colors hover:text-black text-black">ID</button>
+                <span class="text-black/30">|</span>
+                <button onclick="setLang('en')" id="btn-en" class="transition-colors hover:text-black text-black/50">EN</button>
             </div>
         </nav>
 
         <!-- Hero Section -->
         <main class="flex-grow flex flex-col justify-center min-h-screen px-6 py-24 md:px-12 lg:px-24 lg:py-32 max-w-7xl mx-auto w-full">
             <div class="max-w-4xl">
-                <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl leading-[1.05] font-medium text-white mb-8 translatable" data-i18n="hero_headline">
+                <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl leading-[1.05] font-medium text-black mb-8 translatable" data-i18n="hero_headline">
                     Eksekusi Sempurna untuk Bisnis Anda.
                 </h1>
-                <p class="text-lg md:text-xl font-light text-white/80 max-w-2xl mb-12 leading-relaxed translatable" data-i18n="hero_subheadline">
+                <p class="text-lg md:text-xl font-light text-black/80 max-w-2xl mb-12 leading-relaxed translatable" data-i18n="hero_subheadline">
                     Rumah perangkat lunak premium yang mendedikasikan diri pada estetika, performa, dan inovasi tanpa batas.
                 </p>
-                <a href="https://wa.me/6285111401181" target="_blank" class="inline-flex items-center justify-center px-8 py-4 bg-white text-black text-sm tracking-[0.15em] uppercase font-medium hover:bg-slate-200 transition-all duration-300 rounded-full hover:shadow-2xl hover:shadow-white/20 group translatable">
+                <a href="https://wa.me/6285111401181" target="_blank" class="inline-flex items-center justify-center px-8 py-4 bg-black text-white text-sm tracking-[0.15em] uppercase font-medium hover:bg-gray-800 transition-all duration-300 rounded-full hover:shadow-2xl hover:shadow-black/20 group translatable">
                     <span data-i18n="cta_discuss">Diskusikan Bisnis</span>
                     <svg class="w-4 h-4 ml-3 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                 </a>
@@ -130,12 +130,12 @@
         </main>
 
         <!-- Portfolio Section -->
-        <section id="portfolio" class="px-6 py-32 md:px-12 lg:px-24 bg-black/80 border-y border-white/10 backdrop-blur-md">
+        <section id="portfolio" class="px-6 py-32 md:px-12 lg:px-24 bg-gray-50 border-y border-black/5">
             <div class="max-w-7xl mx-auto">
                 <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
                     <div>
-                        <h2 class="font-serif text-3xl md:text-4xl text-white mb-4 translatable [text-shadow:_0_4px_8px_rgb(0_0_0_/_100%)]" data-i18n="portfolio_title">Klien Kami</h2>
-                        <p class="text-white/90 font-medium translatable max-w-2xl leading-relaxed [text-shadow:_0_4px_8px_rgb(0_0_0_/_100%)]" data-i18n="portfolio_subtitle">Berikut adalah beberapa klien dan mitra yang telah mempercayakan perjalanan transformasi digital mereka bersama kami.</p>
+                        <h2 class="font-serif text-3xl md:text-4xl text-black mb-4 translatable" data-i18n="portfolio_title">Klien Kami</h2>
+                        <p class="text-black/80 font-medium translatable max-w-2xl leading-relaxed" data-i18n="portfolio_subtitle">Berikut adalah beberapa klien dan mitra yang telah mempercayakan perjalanan transformasi digital mereka bersama kami.</p>
                     </div>
                 </div>
 
@@ -150,29 +150,29 @@
         <!-- Services Section -->
         <section id="services" class="px-6 py-24 md:px-12 lg:px-24">
             <div class="max-w-7xl mx-auto">
-                <h2 class="font-serif text-3xl md:text-4xl text-white mb-16 translatable" data-i18n="services_title">Layanan</h2>
+                <h2 class="font-serif text-3xl md:text-4xl text-black mb-16 translatable" data-i18n="services_title">Layanan</h2>
                 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
                     <!-- Service 1 -->
-                    <div class="group cursor-pointer p-8 md:p-10 rounded-3xl bg-black/80 border border-white/10 backdrop-blur-md hover:bg-white/5 hover:border-white/20 transition-all duration-300">
-                        <h3 class="text-2xl font-medium text-white mb-4 translatable" data-i18n="service_1_title">Situs Web Perusahaan</h3>
-                        <p class="text-white/70 font-light leading-relaxed translatable" data-i18n="service_1_desc">
+                    <div class="group cursor-pointer p-8 md:p-10 rounded-3xl bg-gray-50 border border-black/5 hover:bg-gray-100 hover:border-black/10 transition-all duration-300">
+                        <h3 class="text-2xl font-medium text-black mb-4 translatable" data-i18n="service_1_title">Situs Web Perusahaan</h3>
+                        <p class="text-black/70 font-light leading-relaxed translatable" data-i18n="service_1_desc">
                             Kehadiran digital yang elegan dan responsif, dirancang khusus untuk mencerminkan identitas premium merek Anda.
                         </p>
                     </div>
 
                     <!-- Service 2 -->
-                    <div class="group cursor-pointer p-8 md:p-10 rounded-3xl bg-black/80 border border-white/10 backdrop-blur-md hover:bg-white/5 hover:border-white/20 transition-all duration-300">
-                        <h3 class="text-2xl font-medium text-white mb-4 translatable" data-i18n="service_2_title">Otomatisasi AI</h3>
-                        <p class="text-white/70 font-light leading-relaxed translatable" data-i18n="service_2_desc">
+                    <div class="group cursor-pointer p-8 md:p-10 rounded-3xl bg-gray-50 border border-black/5 hover:bg-gray-100 hover:border-black/10 transition-all duration-300">
+                        <h3 class="text-2xl font-medium text-black mb-4 translatable" data-i18n="service_2_title">Otomatisasi AI</h3>
+                        <p class="text-black/70 font-light leading-relaxed translatable" data-i18n="service_2_desc">
                             Integrasi kecerdasan buatan mutakhir untuk menyederhanakan alur kerja dan meningkatkan efisiensi operasional.
                         </p>
                     </div>
 
                     <!-- Service 3 -->
-                    <div class="group cursor-pointer p-8 md:p-10 rounded-3xl bg-black/80 border border-white/10 backdrop-blur-md hover:bg-white/5 hover:border-white/20 transition-all duration-300">
-                        <h3 class="text-2xl font-medium text-white mb-4 translatable" data-i18n="service_3_title">Solusi Enterprise Kustom</h3>
-                        <p class="text-white/70 font-light leading-relaxed translatable" data-i18n="service_3_desc">
+                    <div class="group cursor-pointer p-8 md:p-10 rounded-3xl bg-gray-50 border border-black/5 hover:bg-gray-100 hover:border-black/10 transition-all duration-300">
+                        <h3 class="text-2xl font-medium text-black mb-4 translatable" data-i18n="service_3_title">Solusi Enterprise Kustom</h3>
+                        <p class="text-black/70 font-light leading-relaxed translatable" data-i18n="service_3_desc">
                             Pengembangan perangkat lunak skala bisnis yang dirancang khusus untuk mengoptimalkan operasi dan skalabilitas perusahaan Anda.
                         </p>
                     </div>
@@ -181,22 +181,22 @@
         </section>
 
         <!-- Footer -->
-        <footer id="contact" class="mt-auto bg-black text-white rounded-t-[3rem] pt-28 pb-12 px-6 md:px-12 lg:px-24 border-t border-white/10 relative">
+        <footer id="contact" class="mt-auto bg-gray-50 text-black rounded-t-[3rem] pt-28 pb-12 px-6 md:px-12 lg:px-24 border-t border-black/5 relative">
             <div class="max-w-7xl mx-auto flex flex-col items-center text-center relative z-10">
-                <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl mb-6 font-medium text-white translatable" data-i18n="footer_title">
+                <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl mb-6 font-medium text-black translatable" data-i18n="footer_title">
                     Kembangkan Bisnis Anda Bersama Kami
                 </h2>
-                <p class="text-white/70 font-light max-w-xl mb-12 text-lg leading-relaxed translatable" data-i18n="footer_desc">
+                <p class="text-black/70 font-light max-w-xl mb-12 text-lg leading-relaxed translatable" data-i18n="footer_desc">
                     Hubungi tim kami untuk konsultasi eksklusif mengenai kebutuhan digital Anda.
                 </p>
-                <a href="https://wa.me/6285111401181" target="_blank" class="inline-flex items-center justify-center px-10 py-5 bg-white text-black text-sm tracking-[0.15em] uppercase font-medium hover:bg-slate-200 transition-all duration-300 rounded-full hover:scale-105 shadow-xl shadow-white/10 group translatable">
+                <a href="https://wa.me/6285111401181" target="_blank" class="inline-flex items-center justify-center px-10 py-5 bg-black text-white text-sm tracking-[0.15em] uppercase font-medium hover:bg-gray-800 transition-all duration-300 rounded-full hover:scale-105 shadow-xl shadow-black/10 group translatable">
                     <span data-i18n="cta_whatsapp">Hubungi via WhatsApp</span>
                     <svg class="w-4 h-4 ml-3 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                 </a>
                 
-                <img src="reternia.svg" alt="Reternia Logo" class="h-12 md:h-16 w-auto mt-24 opacity-80 hover:opacity-100 transition-opacity">
+                <img src="reternia.svg" alt="Reternia Logo" class="h-12 md:h-16 w-auto mt-24 opacity-80 hover:opacity-100 transition-opacity brightness-0">
                 
-                <div class="w-full mt-16 pt-8 border-t border-white/10 flex justify-center items-center text-sm text-white/50 font-light">
+                <div class="w-full mt-16 pt-8 border-t border-black/10 flex justify-center items-center text-sm text-black/50 font-light">
                     <p class="translatable text-center" data-i18n="footer_rights">© 2026 RETERNIA. Hak cipta dilindungi undang-undang.</p>
                 </div>
             </div>
@@ -205,11 +205,12 @@
     </div>
 
     <!-- Scripts -->
-    <script src="three.min.js"></script>
-    <script src="vanta.halo.min.js"></script>
+    <!-- <script src="three.min.js"></script> -->
+    <!-- <script src="vanta.halo.min.js"></script> -->
     <script>
         // Initialize Vanta
         document.addEventListener('DOMContentLoaded', () => {
+            /* 
             VANTA.HALO({
                 el: "#vanta-bg",
                 mouseControls: true,
@@ -220,16 +221,17 @@
                 amplitudeFactor: 3.00,
                 size: 2.00
             });
+            */
             
             // Navbar Scroll Effect
             const navbar = document.getElementById('navbar');
             window.addEventListener('scroll', () => {
                 if (window.scrollY > 50) {
                     navbar.classList.remove('bg-transparent', 'border-transparent');
-                    navbar.classList.add('bg-black/30', 'backdrop-blur-md', 'border-white/10');
+                    navbar.classList.add('bg-white/90', 'backdrop-blur-md', 'border-black/10');
                 } else {
                     navbar.classList.add('bg-transparent', 'border-transparent');
-                    navbar.classList.remove('bg-black/30', 'backdrop-blur-md', 'border-white/10');
+                    navbar.classList.remove('bg-white/90', 'backdrop-blur-md', 'border-black/10');
                 }
             });
 
@@ -251,17 +253,17 @@
                             const imageTag = item.image ? `<img src="${item.image}" alt="${item.title.id}" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out z-0">` : '';
                             const wrapperTag = item.link && item.link !== "#" && item.link !== "" ? 'a' : 'div';
                             const linkAttr = wrapperTag === 'a' ? `href="${item.link}" target="_blank" rel="noopener noreferrer"` : '';
-                            const visitIcon = wrapperTag === 'a' ? `<svg class="w-5 h-5 absolute top-6 right-6 text-white/50 group-hover:text-white transition-colors z-20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>` : '';
+                            const visitIcon = wrapperTag === 'a' ? `<svg class="w-5 h-5 absolute top-6 right-6 text-black/30 group-hover:text-black transition-colors z-20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>` : '';
                             
                             allCards += `
-                                <${wrapperTag} ${linkAttr} class="block flex-none w-[280px] md:w-[350px] lg:w-[400px] group aspect-[4/5] bg-white/10 border border-white/20 backdrop-blur-md rounded-2xl overflow-hidden relative shadow-sm hover:shadow-2xl transition-all duration-500 cursor-pointer">
+                                <${wrapperTag} ${linkAttr} class="block flex-none w-[280px] md:w-[350px] lg:w-[400px] group aspect-[4/5] bg-white border border-black/10 backdrop-blur-md rounded-2xl overflow-hidden relative shadow-sm hover:shadow-xl transition-all duration-500 cursor-pointer">
                                     ${imageTag}
-                                    <div class="absolute inset-0 bg-gradient-to-br from-slate-800/50 to-slate-950/50 ${item.image ? 'opacity-80' : 'mix-blend-multiply'} group-hover:scale-105 transition-transform duration-700 ease-out z-10"></div>
-                                    <div class="absolute inset-0 bg-white/5 group-hover:bg-white/0 transition-colors duration-500 z-10"></div>
+                                    <div class="absolute inset-0 bg-gradient-to-br from-gray-100/50 to-gray-50/50 ${item.image ? 'opacity-80' : 'mix-blend-multiply'} group-hover:scale-105 transition-transform duration-700 ease-out z-10"></div>
+                                    <div class="absolute inset-0 bg-black/5 group-hover:bg-black/0 transition-colors duration-500 z-10"></div>
                                     ${visitIcon}
-                                    <div class="absolute bottom-0 left-0 w-full p-8 bg-gradient-to-t from-black/90 via-black/60 to-transparent z-20 whitespace-normal">
-                                        <h4 class="text-white text-xl font-medium translatable" data-i18n="port_${item.id}_title">${item.title[currentLang]}</h4>
-                                        <p class="text-white/80 text-sm font-light mt-2 tracking-wide uppercase translatable" data-i18n="port_${item.id}_category">${item.category[currentLang]}</p>
+                                    <div class="absolute bottom-0 left-0 w-full p-8 bg-gradient-to-t from-white/95 via-white/80 to-transparent z-20 whitespace-normal">
+                                        <h4 class="text-black text-xl font-medium translatable" data-i18n="port_${item.id}_title">${item.title[currentLang]}</h4>
+                                        <p class="text-black/70 text-sm font-medium mt-2 tracking-wide uppercase translatable" data-i18n="port_${item.id}_category">${item.category[currentLang]}</p>
                                     </div>
                                 </${wrapperTag}>
                             `;
@@ -335,15 +337,15 @@
             const btnEn = document.getElementById('btn-en');
             
             if (lang === 'id') {
-                btnId.classList.remove('text-white/50');
-                btnId.classList.add('text-white');
-                btnEn.classList.remove('text-white');
-                btnEn.classList.add('text-white/50');
+                btnId.classList.remove('text-black/50');
+                btnId.classList.add('text-black');
+                btnEn.classList.remove('text-black');
+                btnEn.classList.add('text-black/50');
             } else {
-                btnEn.classList.remove('text-white/50');
-                btnEn.classList.add('text-white');
-                btnId.classList.remove('text-white');
-                btnId.classList.add('text-white/50');
+                btnEn.classList.remove('text-black/50');
+                btnEn.classList.add('text-black');
+                btnId.classList.remove('text-black');
+                btnId.classList.add('text-black/50');
             }
 
             // Update Text with smooth transition
