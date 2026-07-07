@@ -28,14 +28,14 @@
     {
         "id": "3",
         "title": {
-            "id": "Aplikasi Finansial",
-            "en": "Financial Application"
+            "id": "Lingo Streak: Teman Bahasa Inggrismu",
+            "en": "Lingo Streak: Your English Friend"
         },
         "category": {
-            "id": "Aplikasi Mobile & Web",
-            "en": "Mobile & Web App"
+            "id": "Media Edukasi",
+            "en": "Educational Media"
         },
         "image": "",
-        "link": "#"
+        "link": "https://lingostreak.reternia.com"
     }
 ]
