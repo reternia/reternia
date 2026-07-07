@@ -9,21 +9,21 @@
             "id": "WhatsApp Automation",
             "en": "WhatsApp Automation"
         },
-        "image": "portfolio-images/wa-reternia.png",
+        "image": "portfolio-images/wa-reternia.jpeg",
         "link": "#"
     },
     {
         "id": "2",
         "title": {
-            "id": "Sistem Manajemen Data",
-            "en": "Data Management System"
+            "id": "Musea: Fine Art & Literature",
+            "en": "Musea: Fine Art & Literature"
         },
         "category": {
-            "id": "Perangkat Lunak Enterprise",
-            "en": "Enterprise Software"
+            "id": "Sosial Media",
+            "en": "Social Media"
         },
-        "image": "",
-        "link": "#"
+        "image": "portfolio-images/musea.jpg",
+        "link": "https://musea.rezkiade.com"
     },
     {
         "id": "3",
@@ -34,45 +34,6 @@
         "category": {
             "id": "Aplikasi Mobile & Web",
             "en": "Mobile & Web App"
-        },
-        "image": "",
-        "link": "#"
-    },
-    {
-        "id": "4",
-        "title": {
-            "id": "Platform Edukasi",
-            "en": "Education Platform"
-        },
-        "category": {
-            "id": "Solusi EdTech",
-            "en": "EdTech Solution"
-        },
-        "image": "",
-        "link": "#"
-    },
-    {
-        "id": "5",
-        "title": {
-            "id": "Aplikasi Kesehatan",
-            "en": "Healthcare App"
-        },
-        "category": {
-            "id": "Aplikasi HealthTech",
-            "en": "HealthTech App"
-        },
-        "image": "",
-        "link": "#"
-    },
-    {
-        "id": "6",
-        "title": {
-            "id": "Portal Real Estate",
-            "en": "Real Estate Portal"
-        },
-        "category": {
-            "id": "Portal Web",
-            "en": "Web Portal"
         },
         "image": "",
         "link": "#"
