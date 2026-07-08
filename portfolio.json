@@ -6,8 +6,8 @@
             "en": "WhatsApp Business Assistant"
         },
         "category": {
-            "id": "WhatsApp Automation",
-            "en": "WhatsApp Automation"
+            "id": "Automation",
+            "en": "Automation"
         },
         "image": "portfolio-images/wa-reternia.jpeg",
         "link": "#"
@@ -23,7 +23,7 @@
             "en": "Social Media"
         },
         "image": "portfolio-images/musea.jpg",
-        "link": "https://musea.rezkiade.com"
+        "link": "https://musea.reternia.com"
     },
     {
         "id": "3",

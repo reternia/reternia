@@ -4,7 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RETERNIA | Premium Software House</title>
+    <title>RETERNIA - Premium Software House</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Reternia adalah premium software house yang mendedikasikan diri pada estetika, performa, dan inovasi tanpa batas. Solusi elegan untuk website perusahaan, otomatisasi AI, dan enterprise.">
+    <meta name="keywords"
+        content="Software House, Web Development, AI Automation, Custom Enterprise Solutions, Pembuatan Website Premium, Agensi Digital">
+    <meta name="author" content="Reternia">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://reternia.com/">
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://reternia.com/">
+    <meta property="og:title" content="RETERNIA - Premium Software House">
+    <meta property="og:description"
+        content="Eksekusi sempurna untuk bisnis Anda. Rumah perangkat lunak premium yang mendedikasikan diri pada estetika, performa, dan inovasi tanpa batas.">
+    <meta property="og:image" content="https://reternia.com/reternia.svg">
+    <meta property="og:site_name" content="RETERNIA">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://reternia.com/">
+    <meta name="twitter:title" content="RETERNIA | Premium Software House">
+    <meta name="twitter:description"
+        content="Eksekusi sempurna untuk bisnis Anda. Rumah perangkat lunak premium yang mendedikasikan diri pada estetika, performa, dan inovasi tanpa batas.">
+    <meta name="twitter:image" content="https://reternia.com/reternia.svg">
+
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="reternia.svg">
     <!-- Tailwind CSS -->
@@ -97,13 +126,28 @@
         .animate-marquee {
             animation: marquee 35s linear infinite;
         }
+
+        /* Mouse Follower Cursor */
+        .cursor-follower {
+            position: fixed;
+            top: -16px;
+            left: -15px;
+            width: 32px;
+            height: 32px;
+            border: 2px solid #FF9E20;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 9999;
+            mix-blend-mode: difference;
+            box-shadow: 0 0 10px rgba(255, 158, 32, 0.5);
+        }
     </style>
 </head>
 
 <body class="text-white font-sans antialiased selection:bg-white selection:text-black overflow-x-hidden bg-neutral-900">
 
     <!-- Layer 1: Anime.js 3D Background -->
-    <div class="full-container fixed inset-0 z-0 pointer-events-none" style="color: #6b7280;"></div>
+    <div class="full-container fixed inset-0 z-0 pointer-events-none" style="color: #111111;"></div>
 
     <!-- Layer 2: Glass Overlay (Disabled) -->
     <!-- <div class="glass-overlay"></div> -->
@@ -135,8 +179,11 @@
 
         <!-- Grid Wrapper for 5-Col Layout -->
         <div class="grid grid-cols-1 lg:grid-cols-12 w-full flex-grow">
-            <!-- Left 4 Cols Content -->
-            <div class="lg:col-span-4 flex flex-col z-20">
+            <!-- Left 1 Col Empty Margin -->
+            <div class="hidden lg:block lg:col-span-1 pointer-events-none"></div>
+
+            <!-- Cols 2-4 Content -->
+            <div class="lg:col-span-3 flex flex-col z-20">
 
                 <!-- Hero Section -->
                 <main class="flex flex-col justify-center min-h-screen px-6 py-24 md:px-12 w-full">
@@ -165,7 +212,7 @@
                 <!-- Services Section -->
                 <section id="services" class="px-6 py-24 md:px-12 border-t border-white/5 mt-[50vh]">
                     <div class="w-full">
-                        <h2 class="font-serif text-6xl md:text-7xl text-[#FF9E20] mb-16 translatable scroll-reveal"
+                        <h2 class="font-serif text-5xl md:text-6xl text-[#FF9E20] mb-16 translatable scroll-reveal"
                             data-i18n="services_title">Layanan</h2>
 
                         <div class="flex flex-col gap-[30vh] w-full">
@@ -219,8 +266,8 @@
                     <div class="w-full">
                         <div class="flex flex-col mb-16 gap-6">
                             <div>
-                                <h2 class="font-serif text-6xl md:text-7xl text-[#FF9E20] mb-4 translatable scroll-reveal"
-                                    data-i18n="portfolio_title">Klien Kami</h2>
+                                <h2 class="font-serif text-5xl md:text-6xl text-[#FF9E20] mb-4 translatable scroll-reveal"
+                                    data-i18n="portfolio_title">Klien</h2>
                                 <p class="text-3xl text-white/80 font-medium translatable max-w-xl leading-relaxed scroll-reveal"
                                     data-i18n="portfolio_subtitle"></p>
                             </div>
@@ -238,6 +285,20 @@
 
             <!-- Right 8 Cols Empty for 3D Background -->
             <div class="hidden lg:block lg:col-span-8 pointer-events-none"></div>
+        </div>
+
+        <!-- Custom Mouse Cursor & Coordinates -->
+        <div class="cursor-follower hidden lg:block"></div>
+        <div
+            class="fixed bottom-12 right-12 z-50 gap-6 text-white font-mono text-sm opacity-60 hidden lg:flex pointer-events-none">
+            <div class="flex flex-col">
+                <span class="text-xs text-[#FF9E20] uppercase tracking-widest">X</span>
+                <span class="coords x value">0</span>
+            </div>
+            <div class="flex flex-col">
+                <span class="text-xs text-[#FF9E20] uppercase tracking-widest">Y</span>
+                <span class="coords y value">0</span>
+            </div>
         </div>
 
         <!-- Footer -->
@@ -295,7 +356,7 @@
     }
     </script>
     <script type="module">
-        import { animate, createTimer, stagger, utils, onScroll, splitText } from 'animejs';
+        import { animate, createAnimatable, createTimer, stagger, utils, onScroll, splitText } from 'animejs';
         import * as THREE from 'three';
         import { getInstances } from 'animejs/adapters/three';
 
@@ -337,29 +398,32 @@
         const gridAxis = (axis, span = spread) => stagger([-span, span], { grid: [gridSize, gridSize, gridSize], axis });
 
         // SplitText animation for all `.scroll-reveal` elements
-        const textElements = document.querySelectorAll('.scroll-reveal');
-        textElements.forEach(el => {
-            splitText(el, { lines: { wrap: 'clip' } })
-                .addEffect(({ lines }) => {
-                    const anim = animate(lines, {
-                        y: ['100%', '0%'],
-                        opacity: [0, 1],
-                        duration: 500,
-                        ease: 'outQuart',
-                        delay: stagger(40),
-                        autoplay: false
-                    });
+        // Ensure fonts are loaded before splitting text to avoid miscalculations
+        document.fonts.ready.then(() => {
+            const textElements = document.querySelectorAll('.scroll-reveal');
+            textElements.forEach(el => {
+                splitText(el, { lines: { wrap: 'clip' } })
+                    .addEffect(({ lines }) => {
+                        const anim = animate(lines, {
+                            y: ['100%', '0%'],
+                            opacity: [0, 1],
+                            duration: 500,
+                            ease: 'outQuart',
+                            delay: stagger(40),
+                            autoplay: false
+                        });
 
-                    onScroll({
-                        target: el,
-                        enter: '80% top',
-                        leave: '20% bottom',
-                        onEnter: () => anim.play(),
-                        onLeave: () => anim.reverse()
-                    });
+                        onScroll({
+                            target: el,
+                            enter: '80% top',
+                            leave: '10% bottom',
+                            onEnter: () => anim.play(),
+                            onLeave: () => anim.reverse()
+                        });
 
-                    return anim;
-                });
+                        return anim;
+                    });
+            });
         });
 
         // Slowly rotate the whole mesh based on scroll
@@ -390,6 +454,28 @@
             camera.updateProjectionMatrix();
             renderer.setSize(newWidth, newHeight);
         });
+
+        // Mouse Follower Cursor Logic
+        const [$x, $y] = utils.$('.coords');
+        const cursorCircle = createAnimatable('.cursor-follower', {
+            x: window.innerWidth / 2,
+            y: window.innerHeight / 2,
+            ease: 'out(2)', // Springy follow effect
+        });
+
+        if ($x && $y) {
+            cursorCircle.animations.x.onRender = () => {
+                $x.innerHTML = utils.roundPad(cursorCircle.x(), 2);
+                $y.innerHTML = utils.roundPad(cursorCircle.y(), 2);
+            };
+        }
+
+        const onMouseMove = e => {
+            // Update the animatable properties x and y with cursor coordinates
+            cursorCircle.x(e.clientX);
+            cursorCircle.y(e.clientY);
+        };
+        window.addEventListener('mousemove', onMouseMove);
     </script>
     <!-- Original Scripts -->
     <!-- <script src="three.min.js"></script> -->
@@ -473,7 +559,7 @@
                 service_2_desc: "Integrasi kecerdasan buatan mutakhir untuk menyederhanakan alur kerja dan meningkatkan efisiensi operasional.",
                 service_3_title: "Solusi Enterprise Kustom",
                 service_3_desc: "Pengembangan perangkat lunak skala bisnis yang dirancang khusus untuk mengoptimalkan operasi dan skalabilitas perusahaan Anda.",
-                portfolio_title: "Klien Kami",
+                portfolio_title: "Klien",
                 footer_title: "Kembangkan Bisnis Anda Bersama Kami",
                 footer_desc: "Hubungi tim kami untuk konsultasi eksklusif mengenai kebutuhan digital Anda.",
                 cta_whatsapp: "Hubungi via WhatsApp",
@@ -493,7 +579,7 @@
                 service_2_desc: "Cutting-edge artificial intelligence integration to streamline workflows and boost operational efficiency.",
                 service_3_title: "Custom Enterprise Solutions",
                 service_3_desc: "Custom-built, scalable software solutions designed specifically to optimize operations and accelerate your business growth.",
-                portfolio_title: "Our Clients",
+                portfolio_title: "Clients",
                 footer_title: "Grow Your Business With Us",
                 footer_desc: "Contact our team for an exclusive consultation regarding your digital needs.",
                 cta_whatsapp: "Contact via WhatsApp",
@@ -559,6 +645,17 @@
                     el.classList.remove('fade-out');
                 });
             }, 300); // 300ms matches the CSS transition time
+        }
+    </script>
+
+    <!-- Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(reg => console.log('Service Worker Registered!'))
+                    .catch(err => console.error('Service Worker Registration Failed!', err));
+            });
         }
     </script>
 </body>
