@@ -28,14 +28,14 @@
     {
         "id": "3",
         "title": {
-            "id": "Lingo Streak: Teman Bahasa Inggrismu",
-            "en": "Lingo Streak: Your English Friend"
+            "id": "LiNit: Teman Bahasa Inggrismu",
+            "en": "LiNit: Your English Friend"
         },
         "category": {
             "id": "Media Edukasi",
             "en": "Educational Media"
         },
         "image": "portfolio-images/lingostreak.png",
-        "link": "https://lingostreak.reternia.com"
+        "link": "https://linit.reternia.com"
     }
 ]
