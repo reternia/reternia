@@ -1,6 +1,6 @@
 # Reternia
 
-**Reternia** is a premium software house dedicated to aesthetics, performance, and boundless innovation. We provide flawless execution for your business by crafting elegant digital experiences, AI automation, and custom enterprise solutions tailored for growth.
+**Reternia** is a software house dedicated to aesthetics, performance, and boundless innovation. We provide flawless execution for your business by crafting elegant digital experiences, AI automation, and custom enterprise solutions tailored for growth.
 
 ## 🚀 Services
 

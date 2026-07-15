@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="page_title">RETERNIA - Premium Software House</title>
+    <title data-i18n="page_title">RETERNIA - Software House</title>
 
     <!-- SEO Meta Tags -->
     <meta name="description"
-        content="Reternia adalah premium software house yang mendedikasikan diri pada estetika, performa, dan inovasi tanpa batas. Solusi elegan untuk website perusahaan, otomatisasi AI, dan enterprise.">
+        content="Reternia adalah software house yang mendedikasikan diri pada estetika, performa, dan inovasi tanpa batas. Solusi elegan untuk website perusahaan, otomatisasi AI, dan enterprise.">
     <meta name="keywords"
         content="Software House, Web Development, AI Automation, Custom Enterprise Solutions, Pembuatan Website Premium, Agensi Digital">
     <meta name="author" content="Reternia">
@@ -20,7 +20,7 @@
     <!-- Open Graph / Social Media Meta Tags -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://reternia.com/">
-    <meta property="og:title" content="RETERNIA - Premium Software House">
+    <meta property="og:title" content="RETERNIA - Software House">
     <meta property="og:description"
         content="Eksekusi sempurna untuk bisnis Anda. Rumah perangkat lunak premium yang mendedikasikan diri pada estetika, performa, dan inovasi tanpa batas.">
     <meta property="og:image" content="https://reternia.com/reternia.svg">
@@ -29,7 +29,7 @@
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://reternia.com/">
-    <meta name="twitter:title" content="RETERNIA | Premium Software House">
+    <meta name="twitter:title" content="RETERNIA | Software House">
     <meta name="twitter:description"
         content="Eksekusi sempurna untuk bisnis Anda. Rumah perangkat lunak premium yang mendedikasikan diri pada estetika, performa, dan inovasi tanpa batas.">
     <meta name="twitter:image" content="https://reternia.com/reternia.svg">
@@ -141,6 +141,17 @@
             z-index: 9999;
             mix-blend-mode: difference;
             box-shadow: 0 0 10px rgba(255, 158, 32, 0.5);
+        }
+
+        /* Thick text shadow for readability over 3D background */
+        body {
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9), 0px 0px 20px rgba(0, 0, 0, 0.8), 0px 0px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Remove text shadow from footer and solid buttons */
+        footer,
+        .bg-white.text-black {
+            text-shadow: none !important;
         }
     </style>
 </head>
@@ -395,7 +406,7 @@
         // Animation with Three.js adapter
         const instances = getInstances(mesh);
 
-        const palette = ['#7f1d1d', '#7c2d12', '#713f12', '#14532d', '#0c4a6e', '#581c87', '#831843'];
+        const palette = ['#ffffff', '#ffcccc', '#ff6666', '#cc0000', '#990000', '#660000', '#4d0000'];
         const gridAxis = (axis, span = spread) => stagger([-span, span], { grid: [gridSize, gridSize, gridSize], axis });
 
         // SplitText animation for all `.scroll-reveal` elements
@@ -547,7 +558,7 @@
         // Translation Dictionary
         const translations = {
             id: {
-                page_title: "RETERNIA - Premium Software House",
+                page_title: "RETERNIA - Software House",
                 nav_services: "Layanan",
                 nav_portfolio: "Klien",
                 nav_contact: "Kontak",
@@ -568,7 +579,7 @@
                 footer_rights: "© 2026 RETERNIA. All rights reserved."
             },
             en: {
-                page_title: "RETERNIA - Premium Software House",
+                page_title: "RETERNIA - Software House",
                 nav_services: "Services",
                 nav_portfolio: "Clients",
                 nav_contact: "Contact",
