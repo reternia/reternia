@@ -428,8 +428,6 @@
             $container.style.opacity = '1';
         }, 100);
 
-        }, 100); // end of deferred 3D setup
-
         // Slowly rotate the whole mesh based on scroll
         animate(mesh, {
             rotateY: 360,
@@ -458,6 +456,8 @@
             camera.updateProjectionMatrix();
             renderer.setSize(newWidth, newHeight);
         });
+
+        }, 100); // end of deferred 3D setup
 
         // Mouse Follower Cursor Logic
         const [$x, $y] = utils.$('.coords');
