@@ -2,15 +2,15 @@
     {
         "id": "1",
         "title": {
-            "id": "WhatsApp Asisten Bisnis",
-            "en": "WhatsApp Business Assistant"
+            "id": "LiNit: Teman Bahasa Inggrismu",
+            "en": "LiNit: Your English Friend"
         },
         "category": {
-            "id": "Automation",
-            "en": "Automation"
+            "id": "Media Edukasi",
+            "en": "Media Education"
         },
-        "image": "portfolio-images/wa-reternia.webp",
-        "link": "#"
+        "image": "portfolio-images/lingostreak.webp",
+        "link": "https://linit.reternia.com"
     },
     {
         "id": "2",
@@ -24,18 +24,5 @@
         },
         "image": "portfolio-images/musea.webp",
         "link": "https://musea.reternia.com"
-    },
-    {
-        "id": "3",
-        "title": {
-            "id": "LiNit: Teman Bahasa Inggrismu",
-            "en": "LiNit: Your English Friend"
-        },
-        "category": {
-            "id": "Media Edukasi",
-            "en": "Media Education"
-        },
-        "image": "portfolio-images/lingostreak.webp",
-        "link": "https://linit.reternia.com"
     }
 ]

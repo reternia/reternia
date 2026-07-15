@@ -131,7 +131,7 @@
 
         /* Remove text shadow from footer and solid buttons */
         footer,
-        .bg-white.text-black {
+        .no-text-shadow {
             text-shadow: none !important;
         }
     </style>
@@ -181,17 +181,17 @@
                 <!-- Hero Section -->
                 <main class="flex flex-col justify-center min-h-screen px-6 py-24 md:px-12 w-full">
                     <div class="w-full">
-                        <h1 class="font-sans text-5xl md:text-6xl xl:text-7xl leading-[1.05] font-medium text-white mb-8 translatable"
+                        <h1 class="font-sans text-5xl md:text-6xl xl:text-7xl leading-[1.05] font-medium text-[#FFEBD3] mb-8 translatable"
                             data-i18n="hero_headline">
                             Eksekusi Sempurna untuk Bisnis Anda.
                         </h1>
-                        <p class="text-lg font-light text-white/80 max-w-xl mb-12 leading-relaxed translatable"
+                        <p class="text-lg font-light text-[#FFEBD3]/80 max-w-xl mb-12 leading-relaxed translatable"
                             data-i18n="hero_subheadline">
                             Premium software house yang mendedikasikan diri pada estetika, performa, dan inovasi
                             tanpa batas.
                         </p>
                         <a href="https://wa.me/6285111401181" target="_blank"
-                            class="inline-flex items-center justify-center px-8 py-4 bg-white text-black text-sm tracking-[0.15em] uppercase font-medium hover:bg-gray-200 transition-all duration-300 rounded-full hover:shadow-2xl hover:shadow-white/20 group translatable">
+                            class="no-text-shadow inline-flex items-center justify-center px-8 py-4 bg-[#FFEBD3] text-black text-sm tracking-[0.15em] uppercase font-medium hover:bg-gray-200 transition-all duration-300 rounded-full hover:shadow-2xl hover:shadow-white/20 group translatable">
                             <span data-i18n="cta_discuss">Diskusikan Bisnis</span>
                             <svg class="w-4 h-4 ml-3 group-hover:translate-x-1 transition-transform" fill="none"
                                 stroke="currentColor" viewBox="0 0 24 24">
@@ -205,7 +205,7 @@
                 <!-- Services Section -->
                 <section id="services" class="px-6 py-24 md:px-12 border-t border-white/5 mt-[50vh]">
                     <div class="w-full">
-                        <h2 class="font-serif text-5xl md:text-6xl text-[#FF9E20] mb-16 translatable scroll-reveal"
+                        <h2 class="font-serif text-5xl md:text-6xl text-[#79AE6F] mb-16 translatable scroll-reveal"
                             data-i18n="services_title">Layanan</h2>
 
                         <div class="flex flex-col gap-[30vh] w-full">
@@ -259,7 +259,7 @@
                     <div class="w-full">
                         <div class="flex flex-col mb-16 gap-6">
                             <div>
-                                <h2 class="font-serif text-5xl md:text-6xl text-[#FF9E20] mb-4 translatable scroll-reveal"
+                                <h2 class="font-serif text-5xl md:text-6xl text-[#79AE6F] mb-4 translatable scroll-reveal"
                                     data-i18n="portfolio_title">Klien</h2>
                                 <p class="text-3xl text-white/80 font-medium translatable max-w-xl leading-relaxed scroll-reveal"
                                     data-i18n="portfolio_subtitle"></p>
@@ -298,16 +298,16 @@
         <footer id="contact"
             class="mt-auto bg-black text-white rounded-t-[3rem] pt-28 pb-12 px-6 md:px-12 lg:px-24 relative">
             <div class="max-w-7xl mx-auto flex flex-col items-center text-center relative z-10">
-                <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl mb-6 font-medium text-white translatable"
+                <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl mb-6 font-medium text-[#FFEBD3] translatable"
                     data-i18n="footer_title">
                     Kembangkan Bisnis Anda Bersama Kami
                 </h2>
-                <p class="text-white/70 font-light max-w-xl mb-12 text-lg leading-relaxed translatable"
+                <p class="text-[#FFEBD3]/70 font-light max-w-xl mb-12 text-lg leading-relaxed translatable"
                     data-i18n="footer_desc">
                     Hubungi tim kami untuk konsultasi eksklusif mengenai kebutuhan digital Anda.
                 </p>
                 <a href="https://wa.me/6285111401181" target="_blank"
-                    class="inline-flex items-center justify-center px-10 py-5 bg-white text-black text-sm tracking-[0.15em] uppercase font-medium hover:bg-gray-200 transition-all duration-300 rounded-full hover:scale-105 shadow-xl shadow-white/10 group translatable">
+                    class="no-text-shadow inline-flex items-center justify-center px-10 py-5 bg-[#FFEBD3] text-black text-sm tracking-[0.15em] uppercase font-medium hover:bg-gray-200 transition-all duration-300 rounded-full hover:scale-105 shadow-xl shadow-white/10 group translatable">
                     <span data-i18n="cta_whatsapp">Hubungi via WhatsApp</span>
                     <svg class="w-4 h-4 ml-3 group-hover:translate-x-1 transition-transform" fill="none"
                         stroke="currentColor" viewBox="0 0 24 24">
@@ -355,107 +355,107 @@
 
         // Three.js setup - Deferred to not block LCP
         setTimeout(() => {
-        const [$container] = utils.$('.full-container');
-        // ensure it starts invisible and fades in smoothly
-        $container.style.opacity = '0';
-        $container.style.transition = 'opacity 2s ease-in-out';
-        const width = window.innerWidth;
-        const height = window.innerHeight;
+            const [$container] = utils.$('.full-container');
+            // ensure it starts invisible and fades in smoothly
+            $container.style.opacity = '0';
+            $container.style.transition = 'opacity 2s ease-in-out';
+            const width = window.innerWidth;
+            const height = window.innerHeight;
 
-        const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true, preserveDrawingBuffer: true });
-        renderer.shadowMap.enabled = true;
-        renderer.setSize(width, height);
-        renderer.setPixelRatio(window.devicePixelRatio);
-        $container.appendChild(renderer.domElement);
+            const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true, preserveDrawingBuffer: true });
+            renderer.shadowMap.enabled = true;
+            renderer.setSize(width, height);
+            renderer.setPixelRatio(window.devicePixelRatio);
+            $container.appendChild(renderer.domElement);
 
-        const scene = new THREE.Scene();
-        const camera = new THREE.PerspectiveCamera(50, width / height, 0.01, 100);
-        camera.position.set(0, 0, 1.5);
-        scene.add(camera);
+            const scene = new THREE.Scene();
+            const camera = new THREE.PerspectiveCamera(50, width / height, 0.01, 100);
+            camera.position.set(0, 0, 1.5);
+            scene.add(camera);
 
-        scene.add(new THREE.AmbientLight(0xffffff, 0.35));
-        const light = new THREE.DirectionalLight(0xffffff, 2);
-        light.position.set(2, 3, 4);
-        light.castShadow = true;
-        scene.add(light);
+            scene.add(new THREE.AmbientLight(0xffffff, 0.35));
+            const light = new THREE.DirectionalLight(0xffffff, 2);
+            light.position.set(2, 3, 4);
+            light.castShadow = true;
+            scene.add(light);
 
-        const gridSize = 6; // cubes per axis
-        const cellSize = 2 / gridSize; // size of each cube
-        const spread = (gridSize - 1) / 2 * cellSize; // distance from center to the outer cubes
-        const geometry = new THREE.BoxGeometry(cellSize, cellSize, cellSize);
-        const material = new THREE.MeshLambertMaterial({ color: '#ffffff' });
-        const mesh = new THREE.InstancedMesh(geometry, material, gridSize * gridSize * gridSize);
-        mesh.castShadow = mesh.receiveShadow = true;
-        scene.add(mesh);
+            const gridSize = 6; // cubes per axis
+            const cellSize = 2 / gridSize; // size of each cube
+            const spread = (gridSize - 1) / 2 * cellSize; // distance from center to the outer cubes
+            const geometry = new THREE.BoxGeometry(cellSize, cellSize, cellSize);
+            const material = new THREE.MeshLambertMaterial({ color: '#ffffff' });
+            const mesh = new THREE.InstancedMesh(geometry, material, gridSize * gridSize * gridSize);
+            mesh.castShadow = mesh.receiveShadow = true;
+            scene.add(mesh);
 
-        // Animation with Three.js adapter
-        const instances = getInstances(mesh);
+            // Animation with Three.js adapter
+            const instances = getInstances(mesh);
 
-        const palette = ['#ffffff', '#ffcccc', '#ff6666', '#cc0000', '#990000', '#660000', '#4d0000'];
-        const gridAxis = (axis, span = spread) => stagger([-span, span], { grid: [gridSize, gridSize, gridSize], axis });
+            const palette = ['#FFCF00', '#E6A800', '#CC8100', '#B35900', '#993300', '#800000', '#5E0000'];
+            const gridAxis = (axis, span = spread) => stagger([-span, span], { grid: [gridSize, gridSize, gridSize], axis });
 
-        // SplitText animation for all `.scroll-reveal` elements
-        // Ensure fonts are loaded before splitting text to avoid miscalculations
-        document.fonts.ready.then(() => {
-            const textElements = document.querySelectorAll('.scroll-reveal');
-            textElements.forEach(el => {
-                splitText(el, { lines: { wrap: 'clip' } })
-                    .addEffect(({ lines }) => {
-                        const anim = animate(lines, {
-                            y: ['100%', '0%'],
-                            opacity: [0, 1],
-                            duration: 500,
-                            ease: 'outQuart',
-                            delay: stagger(40),
-                            autoplay: false
+            // SplitText animation for all `.scroll-reveal` elements
+            // Ensure fonts are loaded before splitting text to avoid miscalculations
+            document.fonts.ready.then(() => {
+                const textElements = document.querySelectorAll('.scroll-reveal');
+                textElements.forEach(el => {
+                    splitText(el, { lines: { wrap: 'clip' } })
+                        .addEffect(({ lines }) => {
+                            const anim = animate(lines, {
+                                y: ['100%', '0%'],
+                                opacity: [0, 1],
+                                duration: 200,
+                                ease: 'outQuart',
+                                delay: stagger(30),
+                                autoplay: false
+                            });
+
+                            onScroll({
+                                target: el,
+                                enter: '80% top',
+                                leave: '20% bottom',
+                                onEnter: () => anim.play(),
+                                onLeave: () => anim.reverse()
+                            });
+
+                            return anim;
                         });
-
-                        onScroll({
-                            target: el,
-                            enter: '80% top',
-                            leave: '10% bottom',
-                            onEnter: () => anim.play(),
-                            onLeave: () => anim.reverse()
-                        });
-
-                        return anim;
-                    });
+                });
             });
-        });
 
-        // Trigger fade in for the canvas
-        setTimeout(() => {
-            $container.style.opacity = '1';
-        }, 100);
+            // Trigger fade in for the canvas
+            setTimeout(() => {
+                $container.style.opacity = '1';
+            }, 100);
 
-        // Slowly rotate the whole mesh based on scroll
-        animate(mesh, {
-            rotateY: 360,
-            rotateX: 360,
-            autoplay: onScroll({ sync: 0.1 }) // smoothly sync with scroll
-        });
+            // Slowly rotate the whole mesh based on scroll
+            animate(mesh, {
+                rotateY: 360,
+                rotateX: 360,
+                autoplay: onScroll({ sync: 0.1 }) // smoothly sync with scroll
+            });
 
-        // Color, scale and spread each instance, staggered from the center
-        animate(instances, {
-            color: palette,
-            x: [gridAxis('x', spread * .25), gridAxis('x')],
-            y: [gridAxis('y', spread * .25), gridAxis('y')],
-            z: [gridAxis('z', spread * .25), gridAxis('z')],
-            scale: [0.1, 0.25], // we remove the final .1 so they end up fully visible
-            delay: stagger([0, 3000], { grid: [gridSize, gridSize, gridSize], from: 'center', reversed: true }),
-            autoplay: onScroll({ sync: 0.15 }) // smoothly sync with scroll using Anime.js built-in
-        });
+            // Color, scale and spread each instance, staggered from the center
+            animate(instances, {
+                color: palette,
+                x: [gridAxis('x', spread * .25), gridAxis('x')],
+                y: [gridAxis('y', spread * .25), gridAxis('y')],
+                z: [gridAxis('z', spread * .25), gridAxis('z')],
+                scale: [0.1, 0.25], // we remove the final .1 so they end up fully visible
+                delay: stagger([0, 3000], { grid: [gridSize, gridSize, gridSize], from: 'center', reversed: true }),
+                autoplay: onScroll({ sync: 0.15 }) // smoothly sync with scroll using Anime.js built-in
+            });
 
-        createTimer({ onUpdate: () => renderer.render(scene, camera) });
+            createTimer({ onUpdate: () => renderer.render(scene, camera) });
 
-        // Handle Window Resize
-        window.addEventListener('resize', () => {
-            const newWidth = window.innerWidth;
-            const newHeight = window.innerHeight;
-            camera.aspect = newWidth / newHeight;
-            camera.updateProjectionMatrix();
-            renderer.setSize(newWidth, newHeight);
-        });
+            // Handle Window Resize
+            window.addEventListener('resize', () => {
+                const newWidth = window.innerWidth;
+                const newHeight = window.innerHeight;
+                camera.aspect = newWidth / newHeight;
+                camera.updateProjectionMatrix();
+                renderer.setSize(newWidth, newHeight);
+            });
 
         }, 100); // end of deferred 3D setup
 
@@ -523,12 +523,12 @@
                             const visitIcon = wrapperTag === 'a' ? `<svg class="w-8 h-8 absolute top-6 right-6 text-white/30 group-hover:text-white transition-colors z-20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>` : '';
 
                             allCards += `
-                                <${wrapperTag} ${hrefAttr} ${targetAttr} class="group block relative w-full overflow-hidden cursor-pointer scroll-reveal">
+                                <${wrapperTag} ${hrefAttr} ${targetAttr} class="group block relative w-full overflow-hidden cursor-pointer">
                                     <div class="aspect-[4/5] w-full overflow-hidden relative">
                                         <!-- Gradient Overlay -->
                                         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-500 z-10"></div>
                                         ${visitIcon}
-                                        <img src="${item.image}" alt="${item.title[currentLang]}" width="800" height="600" loading="lazy" class="w-full h-full object-cover grayscale opacity-70 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-out">
+                                        <img src="${item.image}" alt="${item.title[currentLang]}" width="400" height="500" loading="lazy" class="w-full h-full object-cover grayscale opacity-70 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-out">
                                         
                                         <!-- Text overlay on image -->
                                         <div class="absolute bottom-0 left-0 p-4 z-20 transition-transform duration-500">
