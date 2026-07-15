@@ -37,29 +37,10 @@
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" sizes="any">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <!-- Tailwind CSS -->
-    <script src="tailwind.js"></script>
+    <!-- Tailwind CSS (Compiled for Performance) -->
+    <link href="style.css" rel="stylesheet">
     <!-- Google Fonts -->
     <link href="fonts.css" rel="stylesheet">
-
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Cocogoose', 'sans-serif'],
-                        serif: ['Cocogoose', 'sans-serif'],
-                    },
-                    colors: {
-                        slate: {
-                            850: '#151e2e',
-                            900: '#0f172a',
-                        }
-                    }
-                }
-            }
-        }
-    </script>
     <style>
         @font-face {
             font-family: 'Cocogoose';
@@ -372,8 +353,12 @@
         import * as THREE from 'three';
         import { getInstances } from 'animejs/adapters/three';
 
-        // Three.js setup
+        // Three.js setup - Deferred to not block LCP
+        setTimeout(() => {
         const [$container] = utils.$('.full-container');
+        // ensure it starts invisible and fades in smoothly
+        $container.style.opacity = '0';
+        $container.style.transition = 'opacity 2s ease-in-out';
         const width = window.innerWidth;
         const height = window.innerHeight;
 
@@ -437,6 +422,13 @@
                     });
             });
         });
+
+        // Trigger fade in for the canvas
+        setTimeout(() => {
+            $container.style.opacity = '1';
+        }, 100);
+
+        }, 100); // end of deferred 3D setup
 
         // Slowly rotate the whole mesh based on scroll
         animate(mesh, {
@@ -536,7 +528,7 @@
                                         <!-- Gradient Overlay -->
                                         <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-500 z-10"></div>
                                         ${visitIcon}
-                                        <img src="${item.image}" alt="${item.title[currentLang]}" class="w-full h-full object-cover grayscale opacity-70 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-out">
+                                        <img src="${item.image}" alt="${item.title[currentLang]}" width="800" height="600" loading="lazy" class="w-full h-full object-cover grayscale opacity-70 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-out">
                                         
                                         <!-- Text overlay on image -->
                                         <div class="absolute bottom-0 left-0 p-4 z-20 transition-transform duration-500">

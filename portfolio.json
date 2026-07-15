@@ -9,7 +9,7 @@
             "id": "Automation",
             "en": "Automation"
         },
-        "image": "portfolio-images/wa-reternia.jpeg",
+        "image": "portfolio-images/wa-reternia.webp",
         "link": "#"
     },
     {
@@ -22,7 +22,7 @@
             "id": "Sosial Media",
             "en": "Social Media"
         },
-        "image": "portfolio-images/musea.jpg",
+        "image": "portfolio-images/musea.webp",
         "link": "https://musea.reternia.com"
     },
     {
@@ -35,7 +35,7 @@
             "id": "Media Edukasi",
             "en": "Media Education"
         },
-        "image": "portfolio-images/lingostreak.png",
+        "image": "portfolio-images/lingostreak.webp",
         "link": "https://linit.reternia.com"
     }
 ]
