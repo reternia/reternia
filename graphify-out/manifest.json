@@ -1,0 +1,867 @@
+{
+  "anime.min.js": {
+    "mtime": 1783418191.8512933,
+    "ast_hash": "99b376c4a0e6a61c21ea17e20daf01b5",
+    "semantic_hash": "99b376c4a0e6a61c21ea17e20daf01b5"
+  },
+  "package.json": {
+    "mtime": 1783418444.1555967,
+    "ast_hash": "2819e93551744baa3eb51ce92d7de072",
+    "semantic_hash": "2819e93551744baa3eb51ce92d7de072"
+  },
+  "portfolio.json": {
+    "mtime": 1783584582.9764147,
+    "ast_hash": "92090bbfd1e70f697a2af4daaff805a8",
+    "semantic_hash": "92090bbfd1e70f697a2af4daaff805a8"
+  },
+  "sw.js": {
+    "mtime": 1783476583.4405062,
+    "ast_hash": "56ffda142fafcf546a7268e7263d6c7e",
+    "semantic_hash": "56ffda142fafcf546a7268e7263d6c7e"
+  },
+  "tailwind.js": {
+    "mtime": 1781128427.0,
+    "ast_hash": "7a614b9a197e532c00d09a23b0996b5f",
+    "semantic_hash": "7a614b9a197e532c00d09a23b0996b5f"
+  },
+  "three.min.js": {
+    "mtime": 1653611594.0,
+    "ast_hash": "f147ae01feb6e9dbc161ae9e1befe720",
+    "semantic_hash": "f147ae01feb6e9dbc161ae9e1befe720"
+  },
+  "vanta.halo.min.js": {
+    "mtime": 1783225952.7120588,
+    "ast_hash": "1e08890498542d1015122053b16bbcfa",
+    "semantic_hash": "1e08890498542d1015122053b16bbcfa"
+  },
+  "vendor/animejs/bundles/anime.esm.js": {
+    "mtime": 1783430297.643834,
+    "ast_hash": "972c19c3bf4117599b3b80697521b332",
+    "semantic_hash": "972c19c3bf4117599b3b80697521b332"
+  },
+  "vendor/animejs/bundles/anime.esm.min.js": {
+    "mtime": 1783430297.6440294,
+    "ast_hash": "fbfdf1a7c146f8c04a62a161d42c426f",
+    "semantic_hash": "fbfdf1a7c146f8c04a62a161d42c426f"
+  },
+  "vendor/animejs/bundles/anime.umd.js": {
+    "mtime": 1783430297.644101,
+    "ast_hash": "3c88602bdba96559a6be3608fb57d4f6",
+    "semantic_hash": "3c88602bdba96559a6be3608fb57d4f6"
+  },
+  "vendor/animejs/bundles/anime.umd.min.js": {
+    "mtime": 1783430297.644292,
+    "ast_hash": "99b376c4a0e6a61c21ea17e20daf01b5",
+    "semantic_hash": "99b376c4a0e6a61c21ea17e20daf01b5"
+  },
+  "vendor/animejs/modules/adapters/index.d.ts": {
+    "mtime": 1783430297.6380901,
+    "ast_hash": "56d2f6db22e08e03ac04195fb5740914",
+    "semantic_hash": "56d2f6db22e08e03ac04195fb5740914"
+  },
+  "vendor/animejs/modules/adapters/index.js": {
+    "mtime": 1783430297.6380396,
+    "ast_hash": "6f01fd3468d7013d08c3b0d6331b3e12",
+    "semantic_hash": "6f01fd3468d7013d08c3b0d6331b3e12"
+  },
+  "vendor/animejs/modules/adapters/registry.d.ts": {
+    "mtime": 1783430297.6381135,
+    "ast_hash": "0b03b48de6678659fd06e3668879765d",
+    "semantic_hash": "0b03b48de6678659fd06e3668879765d"
+  },
+  "vendor/animejs/modules/adapters/registry.js": {
+    "mtime": 1783430297.6380641,
+    "ast_hash": "cfa0e9f0f18f887131395c71445b0c29",
+    "semantic_hash": "cfa0e9f0f18f887131395c71445b0c29"
+  },
+  "vendor/animejs/modules/adapters/three/adapter.d.ts": {
+    "mtime": 1783430297.6378014,
+    "ast_hash": "f7c5370447857d67b33b85a28c3ed2c3",
+    "semantic_hash": "f7c5370447857d67b33b85a28c3ed2c3"
+  },
+  "vendor/animejs/modules/adapters/three/adapter.js": {
+    "mtime": 1783430297.6376212,
+    "ast_hash": "d01a57079f71bb55e675d3c3ce3962aa",
+    "semantic_hash": "d01a57079f71bb55e675d3c3ce3962aa"
+  },
+  "vendor/animejs/modules/adapters/three/helpers.d.ts": {
+    "mtime": 1783430297.637826,
+    "ast_hash": "4c9c1044571c4afb5d597718fd83349a",
+    "semantic_hash": "4c9c1044571c4afb5d597718fd83349a"
+  },
+  "vendor/animejs/modules/adapters/three/helpers.js": {
+    "mtime": 1783430297.637644,
+    "ast_hash": "b4d0031fffd048a6c49939f40e7065f9",
+    "semantic_hash": "b4d0031fffd048a6c49939f40e7065f9"
+  },
+  "vendor/animejs/modules/adapters/three/index.d.ts": {
+    "mtime": 1783430297.6378493,
+    "ast_hash": "ab46d29a1e697d6bfacda7cc6975bd78",
+    "semantic_hash": "ab46d29a1e697d6bfacda7cc6975bd78"
+  },
+  "vendor/animejs/modules/adapters/three/index.js": {
+    "mtime": 1783430297.6376715,
+    "ast_hash": "6b9e708fc9757b03d25991d80714affc",
+    "semantic_hash": "6b9e708fc9757b03d25991d80714affc"
+  },
+  "vendor/animejs/modules/adapters/three/instance.d.ts": {
+    "mtime": 1783430297.637875,
+    "ast_hash": "f63d6884668331327c1509a45efb8bcf",
+    "semantic_hash": "f63d6884668331327c1509a45efb8bcf"
+  },
+  "vendor/animejs/modules/adapters/three/instance.js": {
+    "mtime": 1783430297.6376963,
+    "ast_hash": "e1aab9e650c3988fc97b350af6d2a05e",
+    "semantic_hash": "e1aab9e650c3988fc97b350af6d2a05e"
+  },
+  "vendor/animejs/modules/adapters/three/object3d.d.ts": {
+    "mtime": 1783430297.637901,
+    "ast_hash": "e2ebd7ddedcadeeadbf819c35985c768",
+    "semantic_hash": "e2ebd7ddedcadeeadbf819c35985c768"
+  },
+  "vendor/animejs/modules/adapters/three/object3d.js": {
+    "mtime": 1783430297.637726,
+    "ast_hash": "b13d5b46969e0ee8d4732d381c3002d1",
+    "semantic_hash": "b13d5b46969e0ee8d4732d381c3002d1"
+  },
+  "vendor/animejs/modules/adapters/three/resolvers.d.ts": {
+    "mtime": 1783430297.6379256,
+    "ast_hash": "e2ebd7ddedcadeeadbf819c35985c768",
+    "semantic_hash": "e2ebd7ddedcadeeadbf819c35985c768"
+  },
+  "vendor/animejs/modules/adapters/three/resolvers.js": {
+    "mtime": 1783430297.6377532,
+    "ast_hash": "db3130bc6c1829316ab5bfd5dd151f13",
+    "semantic_hash": "db3130bc6c1829316ab5bfd5dd151f13"
+  },
+  "vendor/animejs/modules/adapters/three/uniform.d.ts": {
+    "mtime": 1783430297.6379495,
+    "ast_hash": "e2ebd7ddedcadeeadbf819c35985c768",
+    "semantic_hash": "e2ebd7ddedcadeeadbf819c35985c768"
+  },
+  "vendor/animejs/modules/adapters/three/uniform.js": {
+    "mtime": 1783430297.637778,
+    "ast_hash": "c328e8a09b5e179c78f72756476645d7",
+    "semantic_hash": "c328e8a09b5e179c78f72756476645d7"
+  },
+  "vendor/animejs/modules/animatable/animatable.d.ts": {
+    "mtime": 1783430297.638639,
+    "ast_hash": "6789fffaa2660a6e03deacb165ec56ff",
+    "semantic_hash": "6789fffaa2660a6e03deacb165ec56ff"
+  },
+  "vendor/animejs/modules/animatable/animatable.js": {
+    "mtime": 1783430297.6385918,
+    "ast_hash": "b7739623490e562e0cf7ce7095eba2ea",
+    "semantic_hash": "b7739623490e562e0cf7ce7095eba2ea"
+  },
+  "vendor/animejs/modules/animatable/index.d.ts": {
+    "mtime": 1783430297.6386602,
+    "ast_hash": "f3eab0e7efe85afb27036dc224ba34c1",
+    "semantic_hash": "f3eab0e7efe85afb27036dc224ba34c1"
+  },
+  "vendor/animejs/modules/animatable/index.js": {
+    "mtime": 1783430297.638617,
+    "ast_hash": "570a93371fb67353180709373fee0810",
+    "semantic_hash": "570a93371fb67353180709373fee0810"
+  },
+  "vendor/animejs/modules/animation/additive.d.ts": {
+    "mtime": 1783430297.6384072,
+    "ast_hash": "4089f344d5f935fcdcb2de001a9f50bd",
+    "semantic_hash": "4089f344d5f935fcdcb2de001a9f50bd"
+  },
+  "vendor/animejs/modules/animation/additive.js": {
+    "mtime": 1783430297.6382995,
+    "ast_hash": "76b420f507f8688794ed81ac54fc9bd8",
+    "semantic_hash": "76b420f507f8688794ed81ac54fc9bd8"
+  },
+  "vendor/animejs/modules/animation/animation.d.ts": {
+    "mtime": 1783430297.63843,
+    "ast_hash": "713e94042a92ad6f046b8cd85fd8849a",
+    "semantic_hash": "713e94042a92ad6f046b8cd85fd8849a"
+  },
+  "vendor/animejs/modules/animation/animation.js": {
+    "mtime": 1783430297.6383233,
+    "ast_hash": "7a326a825d95208f15af50d311d57924",
+    "semantic_hash": "7a326a825d95208f15af50d311d57924"
+  },
+  "vendor/animejs/modules/animation/composition.d.ts": {
+    "mtime": 1783430297.6384525,
+    "ast_hash": "a6d6701588aaa96be63da4b174ef2a68",
+    "semantic_hash": "a6d6701588aaa96be63da4b174ef2a68"
+  },
+  "vendor/animejs/modules/animation/composition.js": {
+    "mtime": 1783430297.6383553,
+    "ast_hash": "934c7396a6ac359ff9f2596120413948",
+    "semantic_hash": "934c7396a6ac359ff9f2596120413948"
+  },
+  "vendor/animejs/modules/animation/index.d.ts": {
+    "mtime": 1783430297.638474,
+    "ast_hash": "e7d691436a9bb94d67b3838df24df14a",
+    "semantic_hash": "e7d691436a9bb94d67b3838df24df14a"
+  },
+  "vendor/animejs/modules/animation/index.js": {
+    "mtime": 1783430297.6383839,
+    "ast_hash": "c603a52f850f88fe21a3502ee89103c3",
+    "semantic_hash": "c603a52f850f88fe21a3502ee89103c3"
+  },
+  "vendor/animejs/modules/core/clock.d.ts": {
+    "mtime": 1783430297.6398978,
+    "ast_hash": "32ab75c7bfc22294fa868bf95d8f9200",
+    "semantic_hash": "32ab75c7bfc22294fa868bf95d8f9200"
+  },
+  "vendor/animejs/modules/core/clock.js": {
+    "mtime": 1783430297.639625,
+    "ast_hash": "58c4e3391647dab794eec4662415469a",
+    "semantic_hash": "58c4e3391647dab794eec4662415469a"
+  },
+  "vendor/animejs/modules/core/colors.d.ts": {
+    "mtime": 1783430297.6399221,
+    "ast_hash": "25332e63f88a9e79c4fd976191f63dc5",
+    "semantic_hash": "25332e63f88a9e79c4fd976191f63dc5"
+  },
+  "vendor/animejs/modules/core/colors.js": {
+    "mtime": 1783430297.639647,
+    "ast_hash": "7544583715904410f5240410c74ae1e2",
+    "semantic_hash": "7544583715904410f5240410c74ae1e2"
+  },
+  "vendor/animejs/modules/core/consts.d.ts": {
+    "mtime": 1783430297.6399446,
+    "ast_hash": "5137a4a9da64dc688e61ceb3cdfd7c72",
+    "semantic_hash": "5137a4a9da64dc688e61ceb3cdfd7c72"
+  },
+  "vendor/animejs/modules/core/consts.js": {
+    "mtime": 1783430297.639669,
+    "ast_hash": "8b47c2b843564c27b97d000d4ba38e0c",
+    "semantic_hash": "8b47c2b843564c27b97d000d4ba38e0c"
+  },
+  "vendor/animejs/modules/core/globals.d.ts": {
+    "mtime": 1783430297.6399767,
+    "ast_hash": "56be85e711de81a343329a52626d60b5",
+    "semantic_hash": "56be85e711de81a343329a52626d60b5"
+  },
+  "vendor/animejs/modules/core/globals.js": {
+    "mtime": 1783430297.6396909,
+    "ast_hash": "343f2fece0e14c3bb8033cf63f9e7289",
+    "semantic_hash": "343f2fece0e14c3bb8033cf63f9e7289"
+  },
+  "vendor/animejs/modules/core/helpers.d.ts": {
+    "mtime": 1783430297.6400132,
+    "ast_hash": "82203c75ddcdb180b334d3351978f3c5",
+    "semantic_hash": "82203c75ddcdb180b334d3351978f3c5"
+  },
+  "vendor/animejs/modules/core/helpers.js": {
+    "mtime": 1783430297.639713,
+    "ast_hash": "52936058cced54a71b29c05733cb738c",
+    "semantic_hash": "52936058cced54a71b29c05733cb738c"
+  },
+  "vendor/animejs/modules/core/render.d.ts": {
+    "mtime": 1783430297.6400375,
+    "ast_hash": "5efe55cc4522c753b2c7e3e84ac0377e",
+    "semantic_hash": "5efe55cc4522c753b2c7e3e84ac0377e"
+  },
+  "vendor/animejs/modules/core/render.js": {
+    "mtime": 1783430297.6397395,
+    "ast_hash": "3d13cf34f2cd07ce5fd14aadd1c21b0f",
+    "semantic_hash": "3d13cf34f2cd07ce5fd14aadd1c21b0f"
+  },
+  "vendor/animejs/modules/core/styles.d.ts": {
+    "mtime": 1783430297.64006,
+    "ast_hash": "701921817d849f02ee745d4c0d853c8d",
+    "semantic_hash": "701921817d849f02ee745d4c0d853c8d"
+  },
+  "vendor/animejs/modules/core/styles.js": {
+    "mtime": 1783430297.63977,
+    "ast_hash": "cd15cec04361082bfcc3facdabe8cd40",
+    "semantic_hash": "cd15cec04361082bfcc3facdabe8cd40"
+  },
+  "vendor/animejs/modules/core/targets.d.ts": {
+    "mtime": 1783430297.6400821,
+    "ast_hash": "f09a605dd05df6f7209024f7d7e9ab90",
+    "semantic_hash": "f09a605dd05df6f7209024f7d7e9ab90"
+  },
+  "vendor/animejs/modules/core/targets.js": {
+    "mtime": 1783430297.639797,
+    "ast_hash": "e89d7638cf95dd678369a77309504eec",
+    "semantic_hash": "e89d7638cf95dd678369a77309504eec"
+  },
+  "vendor/animejs/modules/core/transforms.d.ts": {
+    "mtime": 1783430297.6401052,
+    "ast_hash": "669fe10a942e80772402b8d59a586aff",
+    "semantic_hash": "669fe10a942e80772402b8d59a586aff"
+  },
+  "vendor/animejs/modules/core/transforms.js": {
+    "mtime": 1783430297.6398203,
+    "ast_hash": "e2d98bbba2287fbad7734f8ef975f353",
+    "semantic_hash": "e2d98bbba2287fbad7734f8ef975f353"
+  },
+  "vendor/animejs/modules/core/units.d.ts": {
+    "mtime": 1783430297.640128,
+    "ast_hash": "38ae3eac0d695a2d196fa004964d9cbc",
+    "semantic_hash": "38ae3eac0d695a2d196fa004964d9cbc"
+  },
+  "vendor/animejs/modules/core/units.js": {
+    "mtime": 1783430297.639845,
+    "ast_hash": "ae12a2d7cf41a13c85208eae68c67f9b",
+    "semantic_hash": "ae12a2d7cf41a13c85208eae68c67f9b"
+  },
+  "vendor/animejs/modules/core/values.d.ts": {
+    "mtime": 1783430297.6401508,
+    "ast_hash": "cebd8036b6d3d9eb7b068316ea959722",
+    "semantic_hash": "cebd8036b6d3d9eb7b068316ea959722"
+  },
+  "vendor/animejs/modules/core/values.js": {
+    "mtime": 1783430297.6398706,
+    "ast_hash": "e39dbb91fdd6ea9fb5cf17b9a1fbea69",
+    "semantic_hash": "e39dbb91fdd6ea9fb5cf17b9a1fbea69"
+  },
+  "vendor/animejs/modules/draggable/draggable.d.ts": {
+    "mtime": 1783430297.640626,
+    "ast_hash": "3d0ffc7fb72eca1d9200e3bd6d87deb2",
+    "semantic_hash": "3d0ffc7fb72eca1d9200e3bd6d87deb2"
+  },
+  "vendor/animejs/modules/draggable/draggable.js": {
+    "mtime": 1783430297.6405642,
+    "ast_hash": "edff23ae3570738adb48e78e836dd704",
+    "semantic_hash": "edff23ae3570738adb48e78e836dd704"
+  },
+  "vendor/animejs/modules/draggable/index.d.ts": {
+    "mtime": 1783430297.6406505,
+    "ast_hash": "f69fd896b5ca69864ca01abb51bd434e",
+    "semantic_hash": "f69fd896b5ca69864ca01abb51bd434e"
+  },
+  "vendor/animejs/modules/draggable/index.js": {
+    "mtime": 1783430297.6406038,
+    "ast_hash": "ae8405c3d3214874819144d2186fdd63",
+    "semantic_hash": "ae8405c3d3214874819144d2186fdd63"
+  },
+  "vendor/animejs/modules/easings/cubic-bezier/index.d.ts": {
+    "mtime": 1783430297.6413713,
+    "ast_hash": "313c660f8ffabe98fa347670fcc28649",
+    "semantic_hash": "313c660f8ffabe98fa347670fcc28649"
+  },
+  "vendor/animejs/modules/easings/cubic-bezier/index.js": {
+    "mtime": 1783430297.64135,
+    "ast_hash": "5f0aac76358e1b11ed1e9e91754c1eb0",
+    "semantic_hash": "5f0aac76358e1b11ed1e9e91754c1eb0"
+  },
+  "vendor/animejs/modules/easings/eases/index.d.ts": {
+    "mtime": 1783430297.6415339,
+    "ast_hash": "210335a79ab8c506e48550a1604dff40",
+    "semantic_hash": "210335a79ab8c506e48550a1604dff40"
+  },
+  "vendor/animejs/modules/easings/eases/index.js": {
+    "mtime": 1783430297.6414757,
+    "ast_hash": "ed80efc64ae6cde0bb1f7487685705ba",
+    "semantic_hash": "ed80efc64ae6cde0bb1f7487685705ba"
+  },
+  "vendor/animejs/modules/easings/eases/parser.d.ts": {
+    "mtime": 1783430297.641557,
+    "ast_hash": "395f23eed607e1d98b73ee09ab45c7b1",
+    "semantic_hash": "395f23eed607e1d98b73ee09ab45c7b1"
+  },
+  "vendor/animejs/modules/easings/eases/parser.js": {
+    "mtime": 1783430297.6414974,
+    "ast_hash": "d8b6a4916bed4d10cf9c878ac0c0861e",
+    "semantic_hash": "d8b6a4916bed4d10cf9c878ac0c0861e"
+  },
+  "vendor/animejs/modules/easings/index.d.ts": {
+    "mtime": 1783430297.642093,
+    "ast_hash": "715c4018c281e89681874e717a38f43f",
+    "semantic_hash": "715c4018c281e89681874e717a38f43f"
+  },
+  "vendor/animejs/modules/easings/index.js": {
+    "mtime": 1783430297.6420424,
+    "ast_hash": "a6584176ebabdd2c3c63629de8994fdb",
+    "semantic_hash": "a6584176ebabdd2c3c63629de8994fdb"
+  },
+  "vendor/animejs/modules/easings/irregular/index.d.ts": {
+    "mtime": 1783430297.6416874,
+    "ast_hash": "70230e5e2180201d1b5af402b375e2d7",
+    "semantic_hash": "70230e5e2180201d1b5af402b375e2d7"
+  },
+  "vendor/animejs/modules/easings/irregular/index.js": {
+    "mtime": 1783430297.6416628,
+    "ast_hash": "92472b8d7a996e7797759e09bfda774b",
+    "semantic_hash": "92472b8d7a996e7797759e09bfda774b"
+  },
+  "vendor/animejs/modules/easings/linear/index.d.ts": {
+    "mtime": 1783430297.6417873,
+    "ast_hash": "28f1614a102714de7e55b465b105ea6a",
+    "semantic_hash": "28f1614a102714de7e55b465b105ea6a"
+  },
+  "vendor/animejs/modules/easings/linear/index.js": {
+    "mtime": 1783430297.641765,
+    "ast_hash": "fdff031c2f2596bb8a850000d870c825",
+    "semantic_hash": "fdff031c2f2596bb8a850000d870c825"
+  },
+  "vendor/animejs/modules/easings/none.d.ts": {
+    "mtime": 1783430297.642118,
+    "ast_hash": "93e6502f5abc7cd5593d4abb9e374ade",
+    "semantic_hash": "93e6502f5abc7cd5593d4abb9e374ade"
+  },
+  "vendor/animejs/modules/easings/none.js": {
+    "mtime": 1783430297.6420672,
+    "ast_hash": "21f946946b776d387761fdd35e24965e",
+    "semantic_hash": "21f946946b776d387761fdd35e24965e"
+  },
+  "vendor/animejs/modules/easings/spring/index.d.ts": {
+    "mtime": 1783430297.64189,
+    "ast_hash": "536395a10fd080ef3f472648cec1d301",
+    "semantic_hash": "536395a10fd080ef3f472648cec1d301"
+  },
+  "vendor/animejs/modules/easings/spring/index.js": {
+    "mtime": 1783430297.6418664,
+    "ast_hash": "3b4a4f48bd62bd1ae475d1af769ac315",
+    "semantic_hash": "3b4a4f48bd62bd1ae475d1af769ac315"
+  },
+  "vendor/animejs/modules/easings/steps/index.d.ts": {
+    "mtime": 1783430297.6419876,
+    "ast_hash": "2b7d54b2cbb6f55dca94ce521fc6cc81",
+    "semantic_hash": "2b7d54b2cbb6f55dca94ce521fc6cc81"
+  },
+  "vendor/animejs/modules/easings/steps/index.js": {
+    "mtime": 1783430297.6419656,
+    "ast_hash": "7f1993df443ba92a746d18df222f0dac",
+    "semantic_hash": "7f1993df443ba92a746d18df222f0dac"
+  },
+  "vendor/animejs/modules/engine/engine.d.ts": {
+    "mtime": 1783430297.6412125,
+    "ast_hash": "a31b629e8ed9d8c5446686f9e320e1b2",
+    "semantic_hash": "a31b629e8ed9d8c5446686f9e320e1b2"
+  },
+  "vendor/animejs/modules/engine/engine.js": {
+    "mtime": 1783430297.6411662,
+    "ast_hash": "d50d60596ba018024c8a1808e1784a91",
+    "semantic_hash": "d50d60596ba018024c8a1808e1784a91"
+  },
+  "vendor/animejs/modules/engine/index.d.ts": {
+    "mtime": 1783430297.6412342,
+    "ast_hash": "d5d41a1bbcdbd1ea015a9e0c6a290b38",
+    "semantic_hash": "d5d41a1bbcdbd1ea015a9e0c6a290b38"
+  },
+  "vendor/animejs/modules/engine/index.js": {
+    "mtime": 1783430297.6411908,
+    "ast_hash": "51aa2831750c0fed397c33c83c69d730",
+    "semantic_hash": "51aa2831750c0fed397c33c83c69d730"
+  },
+  "vendor/animejs/modules/events/index.d.ts": {
+    "mtime": 1783430297.6423395,
+    "ast_hash": "75eba6a5aba4d1d1526c2a74fd569963",
+    "semantic_hash": "75eba6a5aba4d1d1526c2a74fd569963"
+  },
+  "vendor/animejs/modules/events/index.js": {
+    "mtime": 1783430297.6422665,
+    "ast_hash": "f58707b06634c4f8e4143c06178edd59",
+    "semantic_hash": "f58707b06634c4f8e4143c06178edd59"
+  },
+  "vendor/animejs/modules/events/scroll.d.ts": {
+    "mtime": 1783430297.6423614,
+    "ast_hash": "ca77bde0591cc7dc71fc9c443578041f",
+    "semantic_hash": "ca77bde0591cc7dc71fc9c443578041f"
+  },
+  "vendor/animejs/modules/events/scroll.js": {
+    "mtime": 1783430297.6422913,
+    "ast_hash": "6bf6633c28eda5e2d91bda89a2714ae8",
+    "semantic_hash": "6bf6633c28eda5e2d91bda89a2714ae8"
+  },
+  "vendor/animejs/modules/index.d.ts": {
+    "mtime": 1783430297.64371,
+    "ast_hash": "f6bccb0695b1dab0965eaf3adb047b17",
+    "semantic_hash": "f6bccb0695b1dab0965eaf3adb047b17"
+  },
+  "vendor/animejs/modules/index.js": {
+    "mtime": 1783430297.6436846,
+    "ast_hash": "7252a638ba7cb26e28f4f473f4c78ee9",
+    "semantic_hash": "7252a638ba7cb26e28f4f473f4c78ee9"
+  },
+  "vendor/animejs/modules/layout/index.d.ts": {
+    "mtime": 1783430297.6426077,
+    "ast_hash": "2c86153f82391056f87c9fa7ea626510",
+    "semantic_hash": "2c86153f82391056f87c9fa7ea626510"
+  },
+  "vendor/animejs/modules/layout/index.js": {
+    "mtime": 1783430297.6425378,
+    "ast_hash": "8672582a6bc6ac6102c7255f419ca584",
+    "semantic_hash": "8672582a6bc6ac6102c7255f419ca584"
+  },
+  "vendor/animejs/modules/layout/layout.d.ts": {
+    "mtime": 1783430297.6426313,
+    "ast_hash": "fb6ec9260f9e7414e2fe6aaaded67d72",
+    "semantic_hash": "fb6ec9260f9e7414e2fe6aaaded67d72"
+  },
+  "vendor/animejs/modules/layout/layout.js": {
+    "mtime": 1783430297.6425624,
+    "ast_hash": "6ade8b4cff55ae86eb6a343f1682fa5b",
+    "semantic_hash": "6ade8b4cff55ae86eb6a343f1682fa5b"
+  },
+  "vendor/animejs/modules/scope/index.d.ts": {
+    "mtime": 1783430297.6428003,
+    "ast_hash": "0794ba2dcc54dbbcebbc1f915cbd7f89",
+    "semantic_hash": "0794ba2dcc54dbbcebbc1f915cbd7f89"
+  },
+  "vendor/animejs/modules/scope/index.js": {
+    "mtime": 1783430297.642754,
+    "ast_hash": "1742222a1b1689c57370d839e2f8ff35",
+    "semantic_hash": "1742222a1b1689c57370d839e2f8ff35"
+  },
+  "vendor/animejs/modules/scope/scope.d.ts": {
+    "mtime": 1783430297.6428242,
+    "ast_hash": "87c3d787ecf152bbe5e7cc79c38691ef",
+    "semantic_hash": "87c3d787ecf152bbe5e7cc79c38691ef"
+  },
+  "vendor/animejs/modules/scope/scope.js": {
+    "mtime": 1783430297.6427758,
+    "ast_hash": "e547e0ce4e83376f8e9a8da2fdb5d27f",
+    "semantic_hash": "e547e0ce4e83376f8e9a8da2fdb5d27f"
+  },
+  "vendor/animejs/modules/svg/drawable.d.ts": {
+    "mtime": 1783430297.6409607,
+    "ast_hash": "b3e7a64027a58c57ad37e91083e3b014",
+    "semantic_hash": "b3e7a64027a58c57ad37e91083e3b014"
+  },
+  "vendor/animejs/modules/svg/drawable.js": {
+    "mtime": 1783430297.6408396,
+    "ast_hash": "b007d567f5c398d4d211cf56dce62a25",
+    "semantic_hash": "b007d567f5c398d4d211cf56dce62a25"
+  },
+  "vendor/animejs/modules/svg/helpers.d.ts": {
+    "mtime": 1783430297.640985,
+    "ast_hash": "34f099e6cd9aea978e117b92b8bf906c",
+    "semantic_hash": "34f099e6cd9aea978e117b92b8bf906c"
+  },
+  "vendor/animejs/modules/svg/helpers.js": {
+    "mtime": 1783430297.6408668,
+    "ast_hash": "65742b66e588341105740f83a1bc22bb",
+    "semantic_hash": "65742b66e588341105740f83a1bc22bb"
+  },
+  "vendor/animejs/modules/svg/index.d.ts": {
+    "mtime": 1783430297.6410084,
+    "ast_hash": "499a45e386cfd848a0eb2cfb90e1b387",
+    "semantic_hash": "499a45e386cfd848a0eb2cfb90e1b387"
+  },
+  "vendor/animejs/modules/svg/index.js": {
+    "mtime": 1783430297.6408906,
+    "ast_hash": "e807358a07eb81000d020aab3f74399e",
+    "semantic_hash": "e807358a07eb81000d020aab3f74399e"
+  },
+  "vendor/animejs/modules/svg/morphto.d.ts": {
+    "mtime": 1783430297.6410313,
+    "ast_hash": "0b2334b097707cff8a99f2b3bbb402d5",
+    "semantic_hash": "0b2334b097707cff8a99f2b3bbb402d5"
+  },
+  "vendor/animejs/modules/svg/morphto.js": {
+    "mtime": 1783430297.640915,
+    "ast_hash": "3f2e36916660c847127be1886d15141e",
+    "semantic_hash": "3f2e36916660c847127be1886d15141e"
+  },
+  "vendor/animejs/modules/svg/motionpath.d.ts": {
+    "mtime": 1783430297.6410544,
+    "ast_hash": "6f30649a178116df8ca99724c1080a73",
+    "semantic_hash": "6f30649a178116df8ca99724c1080a73"
+  },
+  "vendor/animejs/modules/svg/motionpath.js": {
+    "mtime": 1783430297.6409373,
+    "ast_hash": "ff9187780099d33e61677309cc819a5f",
+    "semantic_hash": "ff9187780099d33e61677309cc819a5f"
+  },
+  "vendor/animejs/modules/text/index.d.ts": {
+    "mtime": 1783430297.6430612,
+    "ast_hash": "af42c21c608bcc3a9b05a62107808ca9",
+    "semantic_hash": "af42c21c608bcc3a9b05a62107808ca9"
+  },
+  "vendor/animejs/modules/text/index.js": {
+    "mtime": 1783430297.6429782,
+    "ast_hash": "234b8d32616d4af6bc0bc0cd3e7150ef",
+    "semantic_hash": "234b8d32616d4af6bc0bc0cd3e7150ef"
+  },
+  "vendor/animejs/modules/text/scramble.d.ts": {
+    "mtime": 1783430297.6430843,
+    "ast_hash": "68d0f428b4f2f503b3f51a1a93e00263",
+    "semantic_hash": "68d0f428b4f2f503b3f51a1a93e00263"
+  },
+  "vendor/animejs/modules/text/scramble.js": {
+    "mtime": 1783430297.643,
+    "ast_hash": "9ad931419eee3180b70c7e845744484b",
+    "semantic_hash": "9ad931419eee3180b70c7e845744484b"
+  },
+  "vendor/animejs/modules/text/split.d.ts": {
+    "mtime": 1783430297.643111,
+    "ast_hash": "974732bc648f59aa022956eb8ec5b31d",
+    "semantic_hash": "974732bc648f59aa022956eb8ec5b31d"
+  },
+  "vendor/animejs/modules/text/split.js": {
+    "mtime": 1783430297.6430302,
+    "ast_hash": "29cf978e3c50ffb531d940ce2a57468a",
+    "semantic_hash": "29cf978e3c50ffb531d940ce2a57468a"
+  },
+  "vendor/animejs/modules/timeline/index.d.ts": {
+    "mtime": 1783430297.6433938,
+    "ast_hash": "0234eaa249b7ad52a66335c456fb4aa2",
+    "semantic_hash": "0234eaa249b7ad52a66335c456fb4aa2"
+  },
+  "vendor/animejs/modules/timeline/index.js": {
+    "mtime": 1783430297.6433208,
+    "ast_hash": "01f27731cccfc245e36ccc6684de0ac7",
+    "semantic_hash": "01f27731cccfc245e36ccc6684de0ac7"
+  },
+  "vendor/animejs/modules/timeline/position.d.ts": {
+    "mtime": 1783430297.6434183,
+    "ast_hash": "3f7a16b2bbb3d60b78c0a5b9e5e053d5",
+    "semantic_hash": "3f7a16b2bbb3d60b78c0a5b9e5e053d5"
+  },
+  "vendor/animejs/modules/timeline/position.js": {
+    "mtime": 1783430297.6433418,
+    "ast_hash": "d975b49622277ab3495fafc93ae7b3a9",
+    "semantic_hash": "d975b49622277ab3495fafc93ae7b3a9"
+  },
+  "vendor/animejs/modules/timeline/timeline.d.ts": {
+    "mtime": 1783430297.6434407,
+    "ast_hash": "3a03d3faffb9981af90e6c4d459deff4",
+    "semantic_hash": "3a03d3faffb9981af90e6c4d459deff4"
+  },
+  "vendor/animejs/modules/timeline/timeline.js": {
+    "mtime": 1783430297.6433651,
+    "ast_hash": "d4e7b482ba92c5f512f0ec641b170d26",
+    "semantic_hash": "d4e7b482ba92c5f512f0ec641b170d26"
+  },
+  "vendor/animejs/modules/timer/index.d.ts": {
+    "mtime": 1783430297.6436276,
+    "ast_hash": "60738878e054d3b61d23f84e892eae57",
+    "semantic_hash": "60738878e054d3b61d23f84e892eae57"
+  },
+  "vendor/animejs/modules/timer/index.js": {
+    "mtime": 1783430297.6435695,
+    "ast_hash": "3aa2912245f6049f52b4e299399908a3",
+    "semantic_hash": "3aa2912245f6049f52b4e299399908a3"
+  },
+  "vendor/animejs/modules/timer/timer.d.ts": {
+    "mtime": 1783430297.6436512,
+    "ast_hash": "4ed4ff77f3c146dc8315709162fee6a7",
+    "semantic_hash": "4ed4ff77f3c146dc8315709162fee6a7"
+  },
+  "vendor/animejs/modules/timer/timer.js": {
+    "mtime": 1783430297.643595,
+    "ast_hash": "07ce14b9724ec077f3247b9d5406a5ae",
+    "semantic_hash": "07ce14b9724ec077f3247b9d5406a5ae"
+  },
+  "vendor/animejs/modules/types/index.d.ts": {
+    "mtime": 1783430297.6437564,
+    "ast_hash": "7c5517fb69bede7649113425866ac6a7",
+    "semantic_hash": "7c5517fb69bede7649113425866ac6a7"
+  },
+  "vendor/animejs/modules/utils/chainable.d.ts": {
+    "mtime": 1783430297.6390939,
+    "ast_hash": "722cc8540b120c003115575f1beb85e6",
+    "semantic_hash": "722cc8540b120c003115575f1beb85e6"
+  },
+  "vendor/animejs/modules/utils/chainable.js": {
+    "mtime": 1783430297.63892,
+    "ast_hash": "00a50b09e0d95b4b6409304aa5a9a73a",
+    "semantic_hash": "00a50b09e0d95b4b6409304aa5a9a73a"
+  },
+  "vendor/animejs/modules/utils/index.d.ts": {
+    "mtime": 1783430297.6391242,
+    "ast_hash": "19125165c6886950131faca89b8fe061",
+    "semantic_hash": "19125165c6886950131faca89b8fe061"
+  },
+  "vendor/animejs/modules/utils/index.js": {
+    "mtime": 1783430297.638948,
+    "ast_hash": "f737a322c3c42a108eec2807c7ffbe9c",
+    "semantic_hash": "f737a322c3c42a108eec2807c7ffbe9c"
+  },
+  "vendor/animejs/modules/utils/number.d.ts": {
+    "mtime": 1783430297.6391473,
+    "ast_hash": "ed30c1dae1e31a71e87744d8baba381a",
+    "semantic_hash": "ed30c1dae1e31a71e87744d8baba381a"
+  },
+  "vendor/animejs/modules/utils/number.js": {
+    "mtime": 1783430297.6389713,
+    "ast_hash": "25c980212a1f78f862b6bb9bc5806c58",
+    "semantic_hash": "25c980212a1f78f862b6bb9bc5806c58"
+  },
+  "vendor/animejs/modules/utils/random.d.ts": {
+    "mtime": 1783430297.6391711,
+    "ast_hash": "60cdc448548a143bf132537a3e0ee823",
+    "semantic_hash": "60cdc448548a143bf132537a3e0ee823"
+  },
+  "vendor/animejs/modules/utils/random.js": {
+    "mtime": 1783430297.638996,
+    "ast_hash": "4de5842781f21a7582999aaac674589e",
+    "semantic_hash": "4de5842781f21a7582999aaac674589e"
+  },
+  "vendor/animejs/modules/utils/stagger.d.ts": {
+    "mtime": 1783430297.6391943,
+    "ast_hash": "6f80bd684ef59edfc062a48a7a9c54b6",
+    "semantic_hash": "6f80bd684ef59edfc062a48a7a9c54b6"
+  },
+  "vendor/animejs/modules/utils/stagger.js": {
+    "mtime": 1783430297.63902,
+    "ast_hash": "c4a8f13ca2a264d81ab0cb8fe15d72c6",
+    "semantic_hash": "c4a8f13ca2a264d81ab0cb8fe15d72c6"
+  },
+  "vendor/animejs/modules/utils/target.d.ts": {
+    "mtime": 1783430297.6392195,
+    "ast_hash": "30c5c27d3a2172fe998748efdfa23339",
+    "semantic_hash": "30c5c27d3a2172fe998748efdfa23339"
+  },
+  "vendor/animejs/modules/utils/target.js": {
+    "mtime": 1783430297.6390474,
+    "ast_hash": "b4b467acf9289b439e7bd2d1773a09f5",
+    "semantic_hash": "b4b467acf9289b439e7bd2d1773a09f5"
+  },
+  "vendor/animejs/modules/utils/time.d.ts": {
+    "mtime": 1783430297.6392431,
+    "ast_hash": "4438849ec76ab90523d0c23bcc803686",
+    "semantic_hash": "4438849ec76ab90523d0c23bcc803686"
+  },
+  "vendor/animejs/modules/utils/time.js": {
+    "mtime": 1783430297.639071,
+    "ast_hash": "4a8084b8eef3132ba10a0e99ad2dda31",
+    "semantic_hash": "4a8084b8eef3132ba10a0e99ad2dda31"
+  },
+  "vendor/animejs/modules/waapi/composition.d.ts": {
+    "mtime": 1783430297.6403718,
+    "ast_hash": "1bd8232609e8a20c75e0a29bed3a481b",
+    "semantic_hash": "1bd8232609e8a20c75e0a29bed3a481b"
+  },
+  "vendor/animejs/modules/waapi/composition.js": {
+    "mtime": 1783430297.640298,
+    "ast_hash": "2ceb7e86c58dcc09e9132316c37d0cbc",
+    "semantic_hash": "2ceb7e86c58dcc09e9132316c37d0cbc"
+  },
+  "vendor/animejs/modules/waapi/index.d.ts": {
+    "mtime": 1783430297.6403983,
+    "ast_hash": "4d2b7014466b7a9872b6c76e5599462b",
+    "semantic_hash": "4d2b7014466b7a9872b6c76e5599462b"
+  },
+  "vendor/animejs/modules/waapi/index.js": {
+    "mtime": 1783430297.6403213,
+    "ast_hash": "b91a63bd0a8b40f3bd25ed55fa6bcf04",
+    "semantic_hash": "b91a63bd0a8b40f3bd25ed55fa6bcf04"
+  },
+  "vendor/animejs/modules/waapi/waapi.d.ts": {
+    "mtime": 1783430297.640421,
+    "ast_hash": "8ac585883e42c27f98d15b819d7e8eb8",
+    "semantic_hash": "8ac585883e42c27f98d15b819d7e8eb8"
+  },
+  "vendor/animejs/modules/waapi/waapi.js": {
+    "mtime": 1783430297.6403432,
+    "ast_hash": "f8827377d394f18dfe730e40b5a02139",
+    "semantic_hash": "f8827377d394f18dfe730e40b5a02139"
+  },
+  "vendor/three/three.core.js": {
+    "mtime": 1783430297.6322558,
+    "ast_hash": "b2e7a8e645f93a5f3f50dfa3ab0ce439",
+    "semantic_hash": "b2e7a8e645f93a5f3f50dfa3ab0ce439"
+  },
+  "vendor/three/three.core.min.js": {
+    "mtime": 1783430297.6328003,
+    "ast_hash": "71bebd49f962811bfcec3b3081c6b90d",
+    "semantic_hash": "71bebd49f962811bfcec3b3081c6b90d"
+  },
+  "vendor/three/three.module.js": {
+    "mtime": 1783430297.633006,
+    "ast_hash": "349f3ef05ce3c9b4017c650f81a1506e",
+    "semantic_hash": "349f3ef05ce3c9b4017c650f81a1506e"
+  },
+  "vendor/three/three.module.min.js": {
+    "mtime": 1783430297.633277,
+    "ast_hash": "3e3d6ba38927e31c553ac94612b9ac82",
+    "semantic_hash": "3e3d6ba38927e31c553ac94612b9ac82"
+  },
+  "vendor/three/three.tsl.js": {
+    "mtime": 1783430297.6333666,
+    "ast_hash": "e0eacdd460d7070eb81202d396f52458",
+    "semantic_hash": "e0eacdd460d7070eb81202d396f52458"
+  },
+  "vendor/three/three.tsl.min.js": {
+    "mtime": 1783430297.6334043,
+    "ast_hash": "5901db994b914198d72d4ef25d7ad130",
+    "semantic_hash": "5901db994b914198d72d4ef25d7ad130"
+  },
+  "vendor/three/three.webgpu.js": {
+    "mtime": 1783430297.6336155,
+    "ast_hash": "93a4f5d135ceff778aa070e4a30b1ba4",
+    "semantic_hash": "93a4f5d135ceff778aa070e4a30b1ba4"
+  },
+  "vendor/three/three.webgpu.min.js": {
+    "mtime": 1783430297.6345158,
+    "ast_hash": "cd93a8bfd5fe877d46ee3a93c9e78eae",
+    "semantic_hash": "cd93a8bfd5fe877d46ee3a93c9e78eae"
+  },
+  "vendor/three/three.webgpu.nodes.js": {
+    "mtime": 1783430297.634846,
+    "ast_hash": "246486ee454cda963d0d7dbf9e1e8b7a",
+    "semantic_hash": "246486ee454cda963d0d7dbf9e1e8b7a"
+  },
+  "vendor/three/three.webgpu.nodes.min.js": {
+    "mtime": 1783430297.6356914,
+    "ast_hash": "4bbdea2b5f04f38bc27f76890bcdb6d2",
+    "semantic_hash": "4bbdea2b5f04f38bc27f76890bcdb6d2"
+  },
+  "README.md": {
+    "mtime": 1783475726.665801,
+    "ast_hash": "eed1c0540801856a675359738875bc98",
+    "semantic_hash": "eed1c0540801856a675359738875bc98"
+  },
+  "fonts/colinoosh/non_commercial_license.txt": {
+    "mtime": 1433297088.0,
+    "ast_hash": "943ad87a3ce6f9c396cab833acf1cd03",
+    "semantic_hash": "943ad87a3ce6f9c396cab833acf1cd03"
+  },
+  "index.html": {
+    "mtime": 1784090340.7822344,
+    "ast_hash": "f4eeb0c05f9cd687a8a650e7fddd1cb1",
+    "semantic_hash": "f4eeb0c05f9cd687a8a650e7fddd1cb1"
+  },
+  "scrolldocs.md": {
+    "mtime": 1783424478.8091295,
+    "ast_hash": "c348aab178aa8b4da131f48e27528b38",
+    "semantic_hash": "c348aab178aa8b4da131f48e27528b38"
+  },
+  "fonts/cocogoose/COCOGOOSE PRO by ZETAFONTS - Commercial information.pdf": {
+    "mtime": 1492009882.0,
+    "ast_hash": "437dc0b88e98d776da2e6a4973a48bf1",
+    "semantic_hash": "437dc0b88e98d776da2e6a4973a48bf1"
+  },
+  "fonts/cocogoose/Cocogoose-Pro-Family-CC-BY-NCLicensepdf.pdf": {
+    "mtime": 1701798440.0,
+    "ast_hash": "bfed63d331f9a33d8cdf4fe6b3a1f435",
+    "semantic_hash": "bfed63d331f9a33d8cdf4fe6b3a1f435"
+  },
+  "apple-touch-icon.png": {
+    "mtime": 1784090322.6281307,
+    "ast_hash": "9080cabdc35f7a8c85ba3189ed9d2181",
+    "semantic_hash": "9080cabdc35f7a8c85ba3189ed9d2181"
+  },
+  "favicon.png": {
+    "mtime": 1784090322.2931287,
+    "ast_hash": "a8ed395a3670ac48672089b35d02a2f2",
+    "semantic_hash": "a8ed395a3670ac48672089b35d02a2f2"
+  },
+  "fonts/cocogoose/Cocogoose-Pro.png": {
+    "mtime": 1701798440.0,
+    "ast_hash": "d2f64de8d1787acfaf62667e1b632951",
+    "semantic_hash": "d2f64de8d1787acfaf62667e1b632951"
+  },
+  "portfolio-images/lingostreak.png": {
+    "mtime": 1783486581.316947,
+    "ast_hash": "6ac1b2a83dbf3aef6ced2262f023de72",
+    "semantic_hash": "6ac1b2a83dbf3aef6ced2262f023de72"
+  },
+  "portfolio-images/musea.jpg": {
+    "mtime": 1783403285.4037554,
+    "ast_hash": "681250a97191a1275f2ca95ee851aae7",
+    "semantic_hash": "681250a97191a1275f2ca95ee851aae7"
+  },
+  "portfolio-images/wa-reternia.jpeg": {
+    "mtime": 1783404809.0170505,
+    "ast_hash": "266a4cff85f1ded07f17f8868d823218",
+    "semantic_hash": "266a4cff85f1ded07f17f8868d823218"
+  },
+  "reternia.svg": {
+    "mtime": 1783225015.5361154,
+    "ast_hash": "a4d6a1ef31ca81830388481c873ff932",
+    "semantic_hash": "a4d6a1ef31ca81830388481c873ff932"
+  }
+}

@@ -2,40 +2,27 @@
     {
         "id": "1",
         "title": {
-            "id": "WhatsApp Asisten Bisnis",
-            "en": "WhatsApp Business Assistant"
+            "id": "LiNit: Teman Bahasa Inggrismu",
+            "en": "LiNit: Your English Friend"
         },
         "category": {
-            "id": "WhatsApp Automation",
-            "en": "WhatsApp Automation"
+            "id": "Media Edukasi",
+            "en": "Media Education"
         },
-        "image": "portfolio-images/wa-reternia.jpeg",
-        "link": "#"
+        "image": "portfolio-images/lingostreak.webp",
+        "link": "https://linit.reternia.com"
     },
     {
         "id": "2",
         "title": {
-            "id": "Musea: Fine Art & Literature",
-            "en": "Musea: Fine Art & Literature"
+            "id": "Loegy: Fine Art & Literature",
+            "en": "Loegy: Fine Art & Literature"
         },
         "category": {
             "id": "Sosial Media",
             "en": "Social Media"
         },
-        "image": "portfolio-images/musea.jpg",
-        "link": "https://musea.rezkiade.com"
-    },
-    {
-        "id": "3",
-        "title": {
-            "id": "Lingo Streak: Teman Bahasa Inggrismu",
-            "en": "Lingo Streak: Your English Friend"
-        },
-        "category": {
-            "id": "Media Edukasi",
-            "en": "Educational Media"
-        },
-        "image": "portfolio-images/lingostreak.png",
-        "link": "https://lingostreak.reternia.com"
+        "image": "portfolio-images/musea.webp",
+        "link": "https://loegy.reternia.com"
     }
 ]
