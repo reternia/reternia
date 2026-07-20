@@ -15,14 +15,14 @@
     {
         "id": "2",
         "title": {
-            "id": "Musea: Fine Art & Literature",
-            "en": "Musea: Fine Art & Literature"
+            "id": "Loegy: Fine Art & Literature",
+            "en": "Loegy: Fine Art & Literature"
         },
         "category": {
             "id": "Sosial Media",
             "en": "Social Media"
         },
         "image": "portfolio-images/musea.webp",
-        "link": "https://musea.reternia.com"
+        "link": "https://loegy.reternia.com"
     }
 ]
